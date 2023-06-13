@@ -1,1 +1,154 @@
-# vogue-pocket-8479
+
+
+                                                 
+
+
+<div align="center">
+       
+ <h2>Block 25 - Construct Week Group Project</h2>
+ <h3>Project Code : vogue-pocket-8479 </h3>
+  <h3>Project Name : Travelo</h3>
+  
+
+ </div>
+
+
+
+
+
+
+
+<div align="center">
+<h3 align="left">👷Contributors :</h3>
+ 
+
+
+  
+> !   ⦿ [Alka](https://github.com/AchalGaddamwar)                           ![Ashutosh upadhyay](https://github.com/Anburaj07/vogue-pocket-8479/assets/118152296/aa439047-435a-412f-b6b0-7076e02c822d)   ⦿  [Ashutosh](https://github.com/ashutosh102037) 
+
+  > ! ⦿ [Anburaj](https://github.com/abii225)     ⦿ [Abhiraj](https://github.com/abii225)    ![Piyush](https://user-images.githubusercontent.com/118152296/237017919-8398c051-aa6f-4cdf-9a45-c7cc854d5e63.png)  ⦿ [Piyush](https://github.com/pspiyush130)
+
+</div>
+
+
+
+<div align="center">
+
+
+![WhatsApp Image 2023-06-13 at 6 04 07 PM](https://github.com/Anburaj07/vogue-pocket-8479/assets/118152296/e03e7104-66fc-4bea-95e9-15d8c16cffba)
+
+ 
+ <h3>logo :"Travelo"</h3>
+ 
+ ## 🌐 Deployed Link :
+ 
+
+ </div>
+
+
+
+
+
+
+
+
+
+  
+
+
+<h3 align="left"> About This Project 📖</h3>
+
+
+ 
+ <div aling="left">
+  <p>   Welcome to the Travelo GitHub page. Here, we share our commitment to promoting sustainable and responsible tourism through the power of technology. Our open-source projects aim to create innovative tools that make it easier for ecotourism enthusiasts to find sustainable travel experiences and learn about environmental conservation. We believe that collaboration and technology can be powerful tools in promoting sustainable tourism, and we invite you to join us in our mission to protect the planet through responsible travel.
+This project might ( and certainly does ) have bugs, vulnerabilities, or other issues. So, contributions are always welcome ☺
+ The demo is under free hosting so it may require a bit of patience ☺ </p>
+
+
+
+  
+ </div>
+   
+    
+
+✦ You can browse items or select an item from the showcase and preview.
+
+✦ Browse section remembers your list choice, Filter the data according to your choice.
+
+✦ You can search for items.
+ <div align="center">
+   <h4> 🌏 “ Save The Nature   Go Green” 🌴 </h4>
+   </div>
+   
+   
+
+##
+
+
+## Tech Stack 🛠
+![cover](https://user-images.githubusercontent.com/118152296/236819635-30b75b4a-c991-4060-a7f8-90a1da8fa728.jpg)
+
+##
+## ScreenShots 📷
+
+   
+
+ 
+ ##
+ 
+## Run Locally  💻
+
+<h4>1. Clone the project </h4>
+
+```
+git clone https://github.com/Anburaj07/vogue-pocket-8479.git
+
+```
+
+<h4>2. Go to the project directory </h4> 
+
+```
+cd indigo-price-1615
+```
+<h4>3. Install dependencies </h4> 
+
+```
+npm install --engine-strict
+```
+- Use node version(LTS) should be `v16.16.0`
+- Don't change/override package.json
+
+
+<h4>4. Start the server </h4>
+
+```
+  npm start
+```
+##
+
+## Request  🤗
+<div>
+<li>If You find any bug then please create an issue we love to solve that</li>
+<li>If you want to contribute to this project then feel free to make a pull request we love to merge your request</li>
+<li>If You have suggestions or want a new feature feel free to create an issue with label features.</li>
+ </div>
+   
+  <div align="center">
+   <h4>  If you like the project then feel free to give Star 😅</h4>
+   </div>
+  
+ ## Feedback / Contributing 🤝
+ > Contributions are always welcome! Just raise an issue, we will discuss it.
+  > If you have any feedback, please reach out to us <a href="mailto: pspiyush130@gmail.com">Team Travelo</a>
+
+
+
+
+ 
+
+
+
+
+
+
