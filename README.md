@@ -109,7 +109,7 @@ git clone https://github.com/Anburaj07/vogue-pocket-8479.git
 <h4>2. Go to the project directory </h4> 
 
 ```
-cd indigo-price-1615
+cd vogue-pocket-8479
 ```
 <h4>3. Install dependencies </h4> 
 
