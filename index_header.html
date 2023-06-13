@@ -1,0 +1,119 @@
+<style>
+    @import url('https://fonts.googlepis.com/css2?famaliy=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+
+body {
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+    /* display: flex;
+    align-items: flex-end; */
+
+}
+
+/* navbad styling */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    
+    font-size: 2em;
+    color: #7f8685;
+    pointer-events: none;
+}
+
+#logoimg{
+    display: flex;
+  align-items: center;
+    flex-direction: row;
+
+}
+#logoimg img{
+    width: 20%;
+}
+#logoimg h2{
+   /* margin-top: 50px; */
+   vertical-align: middle;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+    padding: 6px 15px;
+    background-color: #7f8685;;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 500;
+
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: #7f8685;
+    color: #fff;
+}
+
+@media (min-width: 100px) and (max-width: 767px){
+        
+} 
+</style>
+<body>
+    <div id="logoimg">
+        <img src="./IMAGES/logo.png" alt="">
+           <h2 class="logo">Travelo</h2>
+      </div>
+    
+       
+    <nav class="navigation">
+        <a class="index.html">Home</a>
+        <a href="destination.html">Destination</a>
+        <a href="activities.html">Activities</a>
+        <a href="user_packages.html">Packages</a>
+        
+        <a href="index.html" class="scrollLink">AboutUs</a>
+        <a href="login.html" class="active1">Login</a>
+       
+       </nav>
+</body>
+<script>
+     let txt = document.querySelector(".navigation");
+    let user = JSON.parse(localStorage.getItem('user')) || [];
+
+    if(user.length !== 0){
+        txt.innerHTML = `<a class="index.html">Home</a>
+        <a href="destination.html">Destination</a>
+        <a href="activities.html">Activities</a>
+        <a href="user_packages.html">Packages</a>
+        <a href="index.html" class="scrollLink">AboutUs</a>
+        <a href="user_profile.html" class="active1">Profile</a>`;
+    }else{
+        txt.innerHTML =  `<a class="index.html">Home</a>
+        <a href="destination.html">Destination</a>
+        <a href="activities.html">Activities</a>
+        <a href="user_packages.html">Packages</a>
+        <a href="index.html" class="scrollLink">AboutUs</a>
+        <a href="login.html" class="active1">Login</a>`;
+    }
+</script>
