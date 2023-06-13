@@ -1,0 +1,23 @@
+{
+  "name": "vogue-pocket-8479",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anburaj07/vogue-pocket-8479.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anburaj07/vogue-pocket-8479/issues"
+  },
+  "homepage": "https://github.com/Anburaj07/vogue-pocket-8479#readme",
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
+}
