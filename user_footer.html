@@ -1,0 +1,115 @@
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #footer_section{
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        padding: 2em;  
+       justify-content: space-between;   
+       background-color: whitesmoke;
+    }
+  
+    #logo_contain > h1{
+      color: #7f8685;
+      font-size: 30px;
+        margin : 0.5em 0;
+    }
+
+   
+
+
+    /* second_div */
+    #second_div{
+        padding: 0 1em;
+    }
+    #second_div ul{
+        list-style: none;
+        list-style-type: none;
+        padding: 0 0.5em;
+        margin: 1em 0;
+        line-height: 2em;
+       
+
+    }
+    #second_div ul a{
+        text-decoration: none;
+        color: #000;
+    }
+    #second_div ul a:hover{
+        text-decoration: underline;
+        color: #000;
+    }
+
+
+    /* third */
+    #icon_div{
+        margin:1em 0;   
+    }
+    #icon_div  img{
+        margin: 0.3em;
+        cursor: pointer;
+    }
+
+    /* four_div */
+    #four_div h3{
+        margin-bottom: 1em;
+    }
+    #four_div input,#four_div button{
+        padding: 15px;
+        border: none;
+        outline: none;
+        border-radius: 1em;
+    }
+    button{
+        margin-top: 30px;
+        color: #fff;
+        cursor: pointer;
+        background-color: #7f8685;
+    }
+    @media screen and (max-width: 425px) and (min-width:300px) {
+        #footer_section{
+            flex-direction: column;
+
+        }
+        #footer_section > div{
+            margin-top: 2em;
+        }
+    }
+</style>
+<footer>
+    <section id="footer_section">
+        <div id="first_div">
+            <div id="logo_contain">  
+                <h1>Travelo</h1>
+            </div>
+            <p>Discover your next holiday destination</p>
+        </div>
+        <div id="second_div">
+            <h3>Explore Travelo</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Destination</a></li>
+                <li><a href="#">Activities</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Developer</a></li>
+            </ul>
+        </div>
+        <div id="third_div">
+            <h3>Connect with us</h3>
+            <div id="icon_div">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" width="40px" alt="">
+               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1200px-Instagram-Icon.png" alt="" width="40px">
+               <img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" alt="" width="40px">
+            </div>
+        </div>
+        <div id="four_div">
+            <h3>Newsletter</h3>
+            <input type="email" name="email" placeholder="Your Email"> <br>
+            <button>Subscribe</button>
+        </div>
+    </section>
+</footer>
+<script></script>
