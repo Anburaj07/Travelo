@@ -24,9 +24,9 @@
 
 
   
-> !   ⦿ [Alka](https://github.com/AchalGaddamwar)                           ![Ashutosh upadhyay](https://github.com/Anburaj07/vogue-pocket-8479/assets/118152296/aa439047-435a-412f-b6b0-7076e02c822d)   ⦿  [Ashutosh](https://github.com/ashutosh102037) 
+> ![Alka - Copy](https://github.com/Anburaj07/vogue-pocket-8479/assets/118152296/ea6e9d8f-6adc-44a7-8a7c-df9c31e01a37)   ⦿ [Alka Sinha](https://github.com/AlkaSinha5)                           ![Ashutosh upadhyay](https://github.com/Anburaj07/vogue-pocket-8479/assets/118152296/aa439047-435a-412f-b6b0-7076e02c822d)   ⦿  [Ashutosh](https://github.com/ashutosh102037) 
 
-  > ! ⦿ [Anburaj](https://github.com/abii225)     ⦿ [Abhiraj](https://github.com/abii225)    ![Piyush](https://user-images.githubusercontent.com/118152296/237017919-8398c051-aa6f-4cdf-9a45-c7cc854d5e63.png)  ⦿ [Piyush](https://github.com/pspiyush130)
+  > ![Anubraj - Copy](https://github.com/Anburaj07/vogue-pocket-8479/assets/118152296/231d17a7-7fe7-4aec-9486-33b4026a95fb) ⦿ [Anburaj S](https://github.com/Anburaj07)        ![Abhijit - Copy](https://github.com/Anburaj07/vogue-pocket-8479/assets/118152296/3d67baa2-3855-44e9-859a-f5cf120e27a3)⦿ [Abhijit Barman](https://github.com/Abhijit0Barman)    ![Piyush](https://user-images.githubusercontent.com/118152296/237017919-8398c051-aa6f-4cdf-9a45-c7cc854d5e63.png)  ⦿ [Piyush Sharma](https://github.com/pspiyush130)
 
 </div>
 
@@ -35,10 +35,15 @@
 <div align="center">
 
 
-![WhatsApp Image 2023-06-13 at 6 04 07 PM](https://github.com/Anburaj07/vogue-pocket-8479/assets/118152296/e03e7104-66fc-4bea-95e9-15d8c16cffba)
 
  
+![logo](https://github.com/Anburaj07/vogue-pocket-8479/assets/118152296/6b0fb34c-1e31-4d35-bbe0-599bfefc044c)
+
  <h3>logo :"Travelo"</h3>
+
+
+ 
+
  
  ## 🌐 Deployed Link :
  
