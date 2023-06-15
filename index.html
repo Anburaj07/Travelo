@@ -2,56 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style/index.css">
+
 
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script>
         $(function(){
-
+        $("#header").load("index_header.html"); 
+        $("#footer").load("user_footer.html"); 
        
-            $("#header").load("index_header.html"); 
-            $("#footer").load("user_footer.html"); 
          
     });
+
+
     </script>
-
-
-
-
-
 </head>
 <body>
 
-
-    <!-- navigation bar starts here -->
-
-
-    <header id="header"></header>
+        <!-- navigation bar starts here -->
 
 
-    <!-- navigation bar ends here -->
+        <header id="header"></header>
 
 
+        <!-- navigation bar ends here -->
 
-
-
-<section>
-
-
-
-<img src="./IMAGES/logo.jpeg" alt="">
-
-
-</section>
     
-<!-- footer section starts here  -->
+    <div class="banner">
+        <div class="bg bg-1"></div>
+        <div class="bg bg-2"></div>
+        <div class="bg bg-3"></div>
+        <h1>Travelo!</h1>
+        <div class="bg bg-4"></div>
+        <div class="bg bg-5"></div>
+        <div class="bg bg-6"></div>
+        <div class="bg bg-7"></div>
+        <div class="bg bg-8"></div>
+        <div class="bg bg-9"></div>
+    </div>
+
+    <div class="tab intro">
+        <h2 class="animation-show">Travelo</h2>
+        <img src="IMAGES/img/navlogo.PNG" alt="" class="animation-show">
+        <p class="animation-show" >
+            Welcome to the Travelo . Here, we share our commitment to promoting sustainable and responsible tourism through the power of technology. Our open-source projects aim to create innovative tools that make it easier for ecotourism enthusiasts to find sustainable travel experiences and learn about environmental conservation. We believe that collaboration and technology can be powerful tools in promoting sustainable tourism, and we invite you to join us in our mission to protect the planet through responsible travel. 
+        </p>
+        
+        <button class="animation-show">Subcribe</button>
+    </div>
+
+    <div class="tab library">
+        <div class="animation-show">
+            <a href="destination.html">  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/f8/1c/13/padma-resort-ubud.jpg?w=900&h=500&s=1">
+            </a>
+          
+            <p>Indonesia</p>
+        </div>
+        <div class="animation-show">
+            <a href="destination.html"> <img src="https://static.toiimg.com/photo/93246451.cms">
+            </a>
+           
+            <p>Himachal</p>
+        </div>
+        <div class="animation-show">
+            <a href="destination.html">
+                <img src="https://www.trawell.in/blog/wp-content/uploads/2021/11/Nagaon_Beach_Main.jpg">
+
+
+            </a>
+            
+            <p>Gujrat</p>
+        </div>
+        <div class="animation-show">
+
+            <a href="destination.html">
+                <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/be/eb/fc.jpg">
+
+
+            </a>
+            
+            <p>Maharastra</p>
+        </div>
+    </div>
+
+
+
+
+    <!-- footer section starts here  -->
 
 <div id="footer"></div>
 
 
 <!-- footer section ends here  -->
+
+
+
+
+
+
+    <script src="./script/app.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 
 </body>
 </html>
