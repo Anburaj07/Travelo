@@ -13,7 +13,7 @@
  </div>
 
 
-
+##
 
 
 
@@ -30,16 +30,16 @@
 
 </div>
 
-
+##
 
 <div align="center">
 
-
+ <h3>logo :"Travelo"</h3>
 
  
 ![logo](https://github.com/Anburaj07/vogue-pocket-8479/assets/118152296/6b0fb34c-1e31-4d35-bbe0-599bfefc044c)
 
- <h3>logo :"Travelo"</h3>
+
 
 
  
