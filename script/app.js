@@ -30,3 +30,10 @@ window.addEventListener("scroll", (event) => {
         }
     })
 });  
+
+
+let btn = document.getElementById('submit').addEventListener('click' ,redirect)
+function redirect(){
+    window.location ="login.html";
+
+}
