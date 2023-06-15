@@ -213,7 +213,7 @@
             "id" : 26,
             "title" : "Rajim Temples Tour",
             "duration" : "2 Nights / 3 Days",
-            "destination":"Chhattisgarh",
+            "destination":"Delhi",
             "location" : "Raipur(2N) → Rajim(1N)",
             "description" : [
                 " Experience the exquisite beauty of the Rajim Temples, featuring stunning architectural designs and intricate carvings of various Hindu deities such as Lord Vishnu, Lord Rama, Lord Narasimha, and Goddess Durga"
@@ -260,6 +260,7 @@
             "id" : 21,
             "title" : "Golden Triangle Tour",
             "duration" : "6 Nights / 7 Days",
+            
             "location" : "Delhi(2N) → Agra(2N) → Jaipur(2N)",
             "description" : [
                 "Embark on a mesmerizing journey through India's rich cultural heritage with the Golden Triangle Tour. Visit iconic landmarks, experience vibrant cities, and immerse yourself in the captivating history and architecture of Delhi, Agra, and Jaipur.",
@@ -299,7 +300,7 @@
                     }
             ],
             "price" : 14000,
-            "destination" : "India"
+            "destination" : "Delhi"
 
         },
         {
@@ -392,7 +393,7 @@
 
             ],
             "price" : 19500,
-            "destination" : "kerala"
+            "destination" : "Rajasthan"
 
         },
         
@@ -537,7 +538,7 @@
                 }
             ],
             "price" : 14500,
-            "destination" : "Chhattisgarh"
+            "destination" : "Rajasthan"
 
         },
         {
