@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing trecking India</title>
+    <link rel="stylesheet" href="../style/trecking.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+        $("#header").load("../index_header.html"); 
+        $("#footer").load("../user_footer.html"); 
+    });
+    </script>
+
+</head>
+<body>
+    <header id="header"></header>
+   <div id="treckdetail">
+    <h1>About</h1>
+          <p class="des-act"> India offers an incredible diversity of trekking experiences, with many regions and routes to choose from. Some of the best trekking experiences can be found in the Ladakh region, situated in the Jammu and Kashmir region of India. </p>
+            <span id="moretext">
+             Other popular trekking destinations include the towering Himalayan peaks, vast expanses of grassland, and the steamy hills of the Western Ghats. If you're interested in trekking in India, you might consider checking out Indiahikes, which is the country's largest and safest trekking organization.
+            </span>
+
+          <a id="morelessbutton" href="#">Read more</a>
+   </div>
+   <section id="treckingpage">
+    <div id="treck-sortby">
+       <ul id="treck-filterDestinations">
+          <h3 class="sortbyDest">Sort by Destinations</h3>
+        
+           </ul>
+       
+       </ul>
+    
+       <h1 id="treck-sortbydestination"></h1>
+    </div>
+  <div id="treck-data">  
+    <div class="container">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <!-- Data will be Appended here -->
+</div>
+
+
+   </section>
+   <div id="treck-buttons"></div>
+<footer id="footer"></footer>
+
+</body>
+<script src="../script/trecking.js"></script>
+</html>

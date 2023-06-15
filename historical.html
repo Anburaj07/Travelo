@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Historical India</title>
+    <link rel="stylesheet" href="../style/historical.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+        $("#header").load("../index_header.html"); 
+        $("#footer").load("../user_footer.html"); 
+    });
+    </script>
+</head>
+<body>
+    <header id="header"></header>
+ <div id="historydetail">
+    <h1>About</h1>
+      <p class="des-act">
+            India is home to numerous historical places that attract tourists from all over the world. Many of these places are listed as UNESCO World Heritage sites due to their cultural importance.
+
+         </p>
+         <span id="moretext">
+            The Taj Mahal in Agra is a famous historical place and is considered one of the seven wonders of the world. It was built by Mughal Emperor Shah Jahan for his queen Mumtaz. There are also many other famous historical places in India, including the Agra Fort, Red Fort, Qutub Minar, Fatehpur Sikri, Hawa Mahal, Victoria Mahal, Humayun's Tomb, Khajuraho Temples, Jallianwala Bagh, Sanchi Stupa, Meenakshi Amman Temple, Golden Temple, and Elephanta Caves, among others.
+         </span>
+<!--             -->
+       <a id="morelessbutton" href="#">Read more</a>
+ </div>
+    <section id="historicalpage">
+      <div id="historical-sortby">
+         <ul id="historical-filterDestinations">
+            <h3 class="sortbyDest">Sort by Destinations</h3>
+          
+             </ul>
+         
+         </ul>
+      
+         <h1 id="historical-sortbydestination"></h1>
+      </div>
+   <div id="historical-data">  
+      <div class="container">
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+       </div>
+       <!-- Data will be Appended here -->
+ </div>
+ 
+ 
+    </section>
+    <div id="historical-buttons"></div>
+ <footer id="footer"></footer>
+</body>
+<script src="../script/historical.js"></script>
+</html>

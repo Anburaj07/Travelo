@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScubaDiving in India</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/scuba.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+        $("#header").load("../index_header.html"); 
+        $("#footer").load("../user_footer.html"); 
+    });
+    </script>
+</head>
+<body>
+    <header id="header"></header>
+ <div id="scubadetail">
+    <h1>About</h1>
+        <p class="des-act">India is a great destination for scuba diving enthusiasts with multiple diving spots throughout the country.</p>
+           <span id="moretext">
+            Some of the best scuba diving spots in India include Netrani Island in Karnataka, Andaman and Nicobar Islands, Lakshadweep, Goa, and Pondicherry. Netrani Island in Karnataka is known for its beautiful reefs, while Andaman and Nicobar Islands offer stunning coral reefs and crystal clear waters. Lakshadweep is also a popular destination for scuba diving, with its blue transparent lagoons, coves with manta rays, turtles, and vibrant fish.
+           </span>
+<!--             -->
+         <a id="morelessbutton" href="#">Read more</a>
+ </div>
+    <section id="scubapage">
+      <div id="scuba-sortby">
+         <ul id="scuba-filterDestinations">
+            <h3 class="sortbyDest">Sort by Destinations</h3>
+          
+             </ul>
+         
+         </ul>
+      
+         <h1 id="scuba-sortbydestination"></h1>
+      </div>
+   <div id="scuba-data">  
+      <div class="container">
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+       </div>
+       <!-- Data will be Appended here -->
+ </div>
+ 
+ 
+    </section>
+    <div id="scuba-buttons"></div>
+    <footer id="footer"></footer>
+</body>
+<script src="../script/scuba.js"></script>
+</html>
