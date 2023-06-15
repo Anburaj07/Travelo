@@ -2,254 +2,244 @@
     "packages":[
         {
             "id" :1,
-            "title" : "Wonderful Kerala Family Holiday Package for 6 Nights",
+            "title" : "Wonderful Indonesia,Bali Family Holiday Package for 6 Nights",
             "duration" : "6 Nights / 7 Days",
-            "destination":"kerala",
-            "location" : "Kochi(2N) → Munnar(2N) → Thekkady(1N) → Kumarakom(1N)",
+            "destination":"Indonesia",
+            "location" : "Ubud (3N) → Seminyak (3N)",
             "description" : [
-                " Kerala is a sought-after tourist destination in India and all over, well-known for its expansive backwaters, beaches, and lush greenery. Its breathtaking natural beauty earned it the title `God's own country` , and it is no less than a paradise on earth, one that you get to experience by choosing one of Holidify’s Kerala tour packages!"
+                " Known as the `Island of the Gods`. It attracts visitors with its stunning beaches, lush landscapes, vibrant arts scene, and rich cultural heritage.!"
             ],
             "image" : [
-                "https://www.holidify.com/images/cmsuploads/compressed/11_20200226103703.jpg",
-                "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2016/06/munnar-tea-plantations.jpg",
-                "https://www.holidify.com/images/cmsuploads/compressed/1024px-Mattupetty_Dam_reservoir2C_near_Munnar2C_Kerala_20190729133540.jpg",
-                "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_614665760_20190705171529.jpg",
-                "https://www.holidify.com/images/cmsuploads/compressed/4182528602_dab87a317c_b_20190207124130jpg"
+                "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/f8/1c/13/padma-resort-ubud.jpg?w=900&h=500&s=1",
+                "https://cf.bstatic.com/xdata/images/hotel/max1024x768/249980321.jpg?k=acc8132eab8d77aee43acdaf199979a72f67ea987b57e78d8c0391cfbfd21ec1&o=&hp=1",
+                "https://images.unsplash.com/photo-1571755931207-3ede68df575a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=874&q=80",
+                "https://images.unsplash.com/photo-1571984405176-5958bd9ac31d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8U2VtaW55YWt8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+                "https://images.unsplash.com/photo-1598751240191-fbe4a9a30e02?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YmFsaSUyMGluZG9uZXNpYXxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
             ],
             "tour" : [
                 {
-                    "title" : "Day 1: Arrival in Kochi",
-                    "description" : "On arrival at Kochi International Airport/Railway Station, you will meet our representative."
-                    
+                  "title": "Day 1: Arrival in Ubud",
+                  "description": "Upon arrival in Bali, transfer to your hotel in Ubud and spend the day at leisure. Explore the art and cultural center of Bali, visit ancient temples, and enjoy the lush green landscapes. Overnight stay in Ubud."
                 },
                 {
-                    "title" : "Day 2: Kochi to Munnar",
-                    "description" : "After breakfast, proceed to Munnar."
-                }, 
+                  "title": "Day 2: Ubud Sightseeing",
+                  "description": "Embark on a full-day sightseeing tour of Ubud. Visit popular attractions such as the Ubud Monkey Forest, Tegalalang Rice Terrace, and the traditional art market. Explore Ubud's art galleries, watch traditional dance performances, and indulge in Balinese cuisine. Overnight stay in Ubud."
+                },
                 {
-                    "title" : "Day 3: Munnar Sightseeing",
-                    "description" : "Visit Rajmalai, Tea Museum, Mattupetty Dam, and Echo Point."
-
-                }, {
-                    "title" : "Day 4: Munnar to Thekkady",
-                    "description" : "On arrival at Thekkady, check in to the hotel. Later, visit Periyar Wildlife Sanctuary or enjoy Elephant Ride (can also add Spice Plantation tour)"
+                  "title": "Day 3: Ubud Temples and Waterfalls",
+                  "description": "Explore the mystical temples of Ubud, including Goa Gajah (Elephant Cave) and the sacred Tirta Empul Temple. Discover the beauty of Tegenungan Waterfall and enjoy a refreshing swim. Immerse yourself in the spiritual and natural wonders of Ubud. Overnight stay in Ubud."
+                },
+                {
+                  "title": "Day 4: Transfer to Seminyak",
+                  "description": "Check out from your Ubud hotel and transfer to Seminyak, a vibrant beach resort area in Bali. Enjoy the beautiful beaches, trendy beach clubs, and upscale shopping and dining options. Spend the day at leisure and relax by the beach. Overnight stay in Seminyak."
+                },
+                {
+                  "title": "Day 5: Seminyak Beaches and Sunset",
+                  "description": "Explore the stunning beaches of Seminyak, including Double Six Beach and Petitenget Beach. Relax on the golden sands, indulge in water sports, or pamper yourself with spa treatments. In the evening, witness a breathtaking sunset while enjoying cocktails at one of the beachfront bars. Overnight stay in Seminyak."
+                },
+                {
+                  "title": "Day 6: Tanah Lot Temple and Uluwatu Sunset Tour",
+                  "description": "Embark on a tour to visit two iconic temples in Bali. Explore the magnificent Tanah Lot Temple, perched on a rocky outcrop by the sea. In the evening, witness the famous Kecak Fire Dance performance at Uluwatu Temple, set atop a cliff with panoramic ocean views. Overnight stay in Seminyak."
+                },
+                {
+                  "title": "Day 7: Departure",
+                  "description": "After breakfast, check out from your hotel in Seminyak and transfer to the airport for your onward journey. Depart from Bali with unforgettable memories of your enchanting Bali experience."
                 }
-               ,
-               {
-                "title" : "Day 5: Thekkady to Kumarakom",
-                "description" : "On arrival at Kumarakom, check in to the traditional houseboat.Enjoy the cruise through the backwaters."
-            }, {
-                "title" : "Day 6: Kumarakom to Kochi",
-                "description" : "Visit Fort Kochi, Jews Street, Marine Drive, and enjoy shopping at Lulu Mall."
-            }
-            ],
-            "price" : 16000 
+              ],
+            "price" : 30000 
 
         },
         {
             "id" : 2,
-            "title" : "Kerala Munnar Tour Package with Thekkady and Alleppey",
+            "title" : "Family Tour Package of Yogyakarta",
             "duration" : "4 Nights / 5 Days",
-            "destination":"kerala",
-            "location" : "Kochi(0N) → Munnar(2N) → Thekkady(1N) → Alleppey(1N)",
+            "destination":"Indonesia",
+            "location" : "Yogyakarta (4N)",
             "description" : [
-                " Kerala is a sought-after tourist destination in India and all over, well-known for its expansive backwaters, beaches, and lush greenery. Its breathtaking natural beauty earned it the title `God's own country` , and it is no less than a paradise on earth, one that you get to experience by choosing one of Holidify’s Kerala tour packages!"
+                " Located on the island of Java, Yogyakarta is renowned for its historical and cultural significance!"
             ],
             "image" : [
-               "https://www.holidify.com/images/cmsuploads/compressed/kathakali_cont_2_20190415105528.jpg",
-               "https://www.holidify.com/images/cmsuploads/compressed/5565536388_2488286a99_z_20190315174116.jpg",
-               "https://www.holidify.com/images/bgImages/MUNNAR.jpg",
-               "https://www.holidify.com/images/bgImages/THEKKADY.jpg",
-               "https://www.holidify.com/images/cmsuploads/compressed/kerala-houseboat-2242698_960_720_20190710133310.jpg"
+               "https://media.gettyimages.com/id/1136368901/photo/uddha-statue-at-borobudur-temple-yogyakarta-java-indonesia.jpg?s=612x612&w=0&k=20&c=AR9JLQPSraOH_UfLfl-m5rN1NZwfc2xK2Zanz5Z856s=",
+               "https://images.unsplash.com/photo-1663834442900-e69d7cd97810?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1033&q=80",
+               "https://media.gettyimages.com/id/1158381721/photo/man-sitting-on-old-fashioned-suv-on-the-background-of-merapi-volcano.jpg?s=612x612&w=0&k=20&c=Q9LDf0kZBfX8worhtKdA4qQ45MZUMGuwy4LHcuXp7r0=",
+               "https://media.gettyimages.com/id/1357801809/photo/mount-merapi-indonesia.jpg?s=612x612&w=0&k=20&c=gNBCBvYVQIEDCLsNtKoBexyGzLHGOmNUau1pYEt3Ewc="
             ],
             "tour" : [
                 {
-                    "title" : "Day 1: Arrive in Kochi & Transfer to Munnar",
-                    "description" :"Arrive in Kochi and transfer to Munnar. On the way, visit Kodanad Elephant Care Center, Cheeyappara waterfalls, Valara waterfalls,"
-                    
+                  "title": "Day 1: Arrival in Yogyakarta",
+                  "description": "Upon arrival in Yogyakarta, check-in to your hotel and spend the day at leisure. Explore the city, visit the famous Malioboro street for shopping, and enjoy local Javanese cuisine. Overnight stay in Yogyakarta."
                 },
                 {
-                    "title" : "Day 2: Explore Munnar",
-                    "description" : "After breakfast, go for a sightseeing tour of Munnar. Visit Eravikulam National Park (Rajamalai), Mattupetty Dam, Tea Estates, Echo Point, Spice Plantation, Rose Garden, Photo Point, Honey Bee Tree, Tea Museum, Blossom Park, Kundala Dam, and Top Station."
-                }, 
+                  "title": "Day 2: Borobudur Temple and Mendut Temple",
+                  "description": "Embark on a full-day excursion to visit Borobudur Temple, the largest Buddhist temple in the world and a UNESCO World Heritage Site. Explore the temple complex, admire the intricate stone carvings, and learn about its rich history. Visit Mendut Temple nearby, known for its ancient Buddhist relics. Overnight stay in Yogyakarta."
+                },
                 {
-                    "title" : "Day 3: Munnar to Thekkady",
-                    "description" : "Sightseeing tour of Thekkady.  Visit Periyar Wildlife Sanctuary, Mulla Periyar Dam, and Spice Plantations tour where one can shop exotic spices."
-
-                }, {
-                    "title" : "Day 4: Thekkady to Alleppey",
-                    "description" : "In Alleppey, enjoy the backwaters, scenery, and different places for 21 hrs in Kerala-style houseboats from 12 noon."
+                  "title": "Day 3: Prambanan Temple and Ratu Boko Temple",
+                  "description": "Discover the majestic Prambanan Temple, a Hindu temple complex dedicated to Lord Shiva. Marvel at the towering spires and intricate architectural details. In the afternoon, visit Ratu Boko Temple, an archaeological site with panoramic views and ancient ruins. Enjoy a stunning sunset from the temple grounds. Overnight stay in Yogyakarta."
+                },
+                {
+                  "title": "Day 4: Sultan's Palace and Taman Sari Water Castle",
+                  "description": "Explore the Kraton, the Sultan's Palace, and delve into the rich Javanese culture and history. Discover the royal heritage, visit the palace museum, and witness traditional performances. Next, visit Taman Sari Water Castle, a former royal garden with unique water features and historic structures. Overnight stay in Yogyakarta."
+                },
+                {
+                  "title": "Day 5: Departure",
+                  "description": "After breakfast, check out from your hotel and transfer to the airport for your onward journey. Depart from Yogyakarta with wonderful memories of your time exploring the cultural heart of Java."
                 }
-               ,
-               {
-                "title" : "Day 5: Departure",
-                "description" : "Drive to Kochi for sightseeing.Visit Fort Kochi, Navy Museum, St. Francis Church, Chinese Fishing Net, Santa Cruz Basilica, Mattanchery Palace, Jewish Synagogue, Marian drive, Marine walkway, boating, and Tripunithura Hill Palace."
-            }
-            ],
+              ],
             "price" : 15000 
 
         },
         {
             "id" : 3,
-            "title" : "Kerala Houseboat Package - Houseboat Stay For One Night",
-            "duration" : "3 Nights / 4 Days",
-            "destination":"kerala",
-            "location" : "Kochi(1N) → Munnar(2N) → Alleppey (1N)",
+            "title" : "Raja Ampat Islands Package - on coral reefs",
+            "duration" : "5 Nights / 6 Days",
+            "destination":"Indonesia",
+            "location" : "Sorong (1N) → Waisai (4N)",
             "description" : [
-                " Kerala is a sought-after tourist destination in India and all over, well-known for its expansive backwaters, beaches, and lush greenery. Its breathtaking natural beauty earned it the title `God's own country` , and it is no less than a paradise on earth, one that you get to experience by choosing one of Holidify’s Kerala tour packages!"
+                "Raja Ampat Islands known for its pristine coral reefs, diverse marine life, and stunning natural landscapes. Snorkel or dive in crystal-clear waters, relax on white-sand beaches, and discover the unique flora and fauna!"
             ],
             "image" : [
-              "https://www.tripcrafters.com/agent/trip_photos/Crazy-KL-01-04.jpg",
-              "https://www.tripcrafters.com/agent/trip_photos/Crazy-KL-01-05.jpg",
-              "https://www.holidify.com/images/cmsuploads/compressed/1024px-Mattupetty_Dam_20190729133531.jpg",
-              "https://www.holidify.com/images/compressed/dest_pixa_16404.jpg"
+              "https://images.unsplash.com/photo-1650509009946-32b00cb21a0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fFJhamElMjBBbXBhdCUyMElzbGFuZHN8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60",
+              "https://media.gettyimages.com/id/689878248/photo/marine-life-of-raja-ampat-west-papua-indonesia.jpg?s=612x612&w=0&k=20&c=7vcSy6g-tnhE_95uknUZ0HzRn4sinYXCnTzFLlm0UIU=",
+              "https://media.gettyimages.com/id/1153675283/photo/moorish-ideols-zanclus-cornutus-in-blue-window-with-colorful-frame-raja-ampat-indonesia.jpg?s=612x612&w=0&k=20&c=WVwryJtmf4aEXKkSNJyUXbpbaTnC-cdQ09in_ce0VRM=",
+              "https://media.gettyimages.com/id/943858430/photo/many-of-the-small-islands-off-the-coast-of-misool-feature-tranquil-lagoons-that-are-perfect.jpg?s=612x612&w=0&k=20&c=rfuuaaGk2p61h3-r5Ca4sHDL7lpvLYO2S5lYdzNlor4="
             ],
             "tour" : [
                 {
-                    "title" : "Day 1: Arrival in Kochi & Transfer to Munnar",
-                    "description" : "On arrival at Kochi Airport, our representative will meet and assist you with the transfer to Munnar."
-                    
+                  "title": "Day 1: Arrival in Sorong",
+                  "description": "Upon arrival in Sorong, transfer to your hotel and spend the day at leisure. Explore the town, visit local markets, and learn about the unique Papuan culture. Overnight stay in Sorong."
                 },
                 {
-                    "title" : "Day 2: Explore Munnar",
-                    "description" : "After breakfast, visit Flower Garden, Photo Point, Mattupetty Dam, Kundala dam, Echo Point, Rajamala, etc."
-                }, 
+                  "title": "Day 2: Transfer to Waisai",
+                  "description": "Take a ferry from Sorong to Waisai, the gateway to Raja Ampat. Upon arrival, check-in to your beachfront resort and relax. Enjoy the stunning surroundings and get ready for the upcoming island exploration. Overnight stay in Waisai."
+                },
                 {
-                    "title" : "Day 3: Munnar to Alleppey",
-                    "description" : "On arrival check in to the traditional Kerala Kettuvallam (houseboat) by 12 noon (AC Deluxe houseboat on full board basis)."
-
-                }, {
-                    "title" : "Day 4: Departure",
-                    "description" : "After breakfast check out from the hotel and drive to Kochin railway station for your onward destination. "
+                  "title": "Day 3: Island Hopping in Raja Ampat",
+                  "description": "Embark on a full-day island-hopping adventure in Raja Ampat. Visit iconic islands like Wayag, Misool, or Pianemo, known for their breathtaking landscapes and crystal-clear waters. Snorkel, swim, and capture the beauty of this paradise. Overnight stay in Waisai."
+                },
+                {
+                  "title": "Day 4: Snorkeling and Diving",
+                  "description": "Explore the vibrant underwater world of Raja Ampat. Join snorkeling or diving sessions at popular sites such as Cape Kri, Melissa's Garden, or Blue Magic. Witness the incredible biodiversity of coral reefs and marine life. Overnight stay in Waisai."
+                },
+                {
+                  "title": "Day 5: Cultural Interaction and Relaxation",
+                  "description": "Interact with the local community and learn about their traditions and way of life. Visit traditional villages, participate in local activities, and support community-based initiatives. Spend the rest of the day relaxing on the beach or enjoying water activities. Overnight stay in Waisai."
+                },
+                {
+                  "title": "Day 6: Departure",
+                  "description": "After breakfast, check out from your resort and transfer to the ferry terminal in Waisai. Take the ferry back to Sorong and proceed to the airport for your onward journey. Depart from Sorong with unforgettable memories of your Raja Ampat Islands expedition."
                 }
-         
-            ],
-            "price" : 11000 
+              ],
+            "price" : 21000 
 
         },
         {
             "id" : 4,
-            "title" : "Kerala Delight Tour Package",
-            "duration" : "5 Nights / 6 Days",
-            "destination":"kerala",
-            "location" : "Kochi(1N) → Munnar(2N) → Thekkady(1N) → Alleppey(1N)",
+            "title" : "Komodo National Park Tour Package",
+            "duration" : "3 Nights / 4 Days",
+            "destination":"Indonesia",
+            "location" : "Labuan Bajo (1N) → Komodo Island (2N)",
             "description" : [
-                " Kerala is a sought-after tourist destination in India and all over, well-known for its expansive backwaters, beaches, and lush greenery. Its breathtaking natural beauty earned it the title `God's own country` , and it is no less than a paradise on earth, one that you get to experience by choosing one of Holidify’s Kerala tour packages!"
+                "  Komodo National Park is home to the iconic Komodo dragons, the largest lizards on Earth. Embark on a trekking adventure to see these fascinating creatures up close, explore the surrounding islands, and enjoy world-class diving and snorkeling opportunities!"
             ],
             "image" : [
-             "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_649838029_20190705171629.jpg",
-             "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_409553653_20190705175301.jpg",
-             "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2017/11/acj-2211-most-romantic-honeymoon-destinations-in-india-26.jpg",
-             "https://www.holidify.com/images/cmsuploads/compressed/kochi_20190312140407.jpg"
+             "https://media.gettyimages.com/id/1177992959/photo/a-tourist-with-an-endemic-komodo-dragon-on-rinca-island-part-of-komodo-national-park-indonesia.jpg?s=612x612&w=0&k=20&c=Prvlcj1bndIlIufnkFk4xxFk0iDy8CWXIq3sdiSSQ5k=",
+             "https://plus.unsplash.com/premium_photo-1661843714194-62e7bc511d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8S29tb2RvJTIwTmF0aW9uYWwlMjBQYXJrfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+             "https://images.unsplash.com/photo-1648726442622-5cd3abeccaa8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fEtvbW9kbyUyME5hdGlvbmFsJTIwUGFya3xlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+             "https://www.worldatlas.com/upload/7f/11/e1/shutterstock-259025846.jpg"
             ],
-            "tour" : [
+            "tour": [
                 {
-                    "title" : "Day 1: Arrival at Kochi",
-                    "description" : "On arrival at Kochi Airport, meet our representative and transfer to the hotel.Kochi (colonial name Cochin) is a vibrant city, also referred to as the Gateway to Kerala."
-                    
+                  "title": "Day 1: Arrival in Labuan Bajo",
+                  "description": "Upon arrival in Labuan Bajo, the gateway to Komodo National Park, check-in to your hotel and spend the day exploring the town. Visit local markets, enjoy sunset views from a hilltop, and savor delicious seafood. Overnight stay in Labuan Bajo."
                 },
                 {
-                    "title" : "Day 2: Kochi Sightseeing & Transfer to Munnar",
-                    "description" : "Next morning after breakfast, proceed for city tour of Kochi. Visit Fort Kochi, walk to the Church of St Francis, the oldest European-built church in the country."
-                }, 
-                {
-                    "title" : "Day 3: Munnar",
-                    "description" : "Enjoy visiting sections of Old Munnar, which includes the charming Old Christ Church with its original fourteen rows of wooden pews."
-
-                }, {
-                    "title" : "Day 4: Transfer to Thekkady (104 kms / approx. 5 hour drive)",
-                    "description" : "Drive to Thekkady (Periyar) - the land of the spice plantations.The evening is at leisure for shopping at the bustling spice market in Kumily village on your own."
+                  "title": "Day 2: Komodo Island Exploration",
+                  "description": "Embark on a boat trip to Komodo Island, home to the famous Komodo dragons. Trek through the national park accompanied by a local ranger, observe the fascinating wildlife, and learn about the unique ecosystem. Enjoy snorkeling at Pink Beach and witness the stunning coral reefs. Overnight stay on the boat near Komodo Island."
                 },
                 {
-                    "title" : "Day 5: Transfer to Alleppey (153 kms / approx. 5 hour drive)",
-                    "description" : "Drive to the idyllic backwaters of Alleppey. Alleppey is Kerala's Venice of the East, a heartland of lagoons and mangrove fields, inter-linked with hundreds of narrow winding canals."
+                  "title": "Day 3: Rinca Island and Padar Island",
+                  "description": "Explore Rinca Island, another habitat of the Komodo dragons. Trek through the wilderness, spot the giant lizards, and discover other wildlife. Afterward, visit Padar Island, known for its iconic panoramic views and picturesque landscapes. Overnight stay on the boat near Padar Island."
                 },
                 {
-                    "title" : "Day 6: Departure to Kochi (85 kms / approx. 2 hour drive)",
-                    "description" : "Bid farewell to your tour, as you are transferred to Kochi airport for your onward journey"
+                  "title": "Day 4: Departure",
+                  "description": "After breakfast on the boat, explore one more snorkeling spot near Kanawa Island. Enjoy the crystal-clear waters and vibrant marine life. Return to Labuan Bajo, check out from your hotel, and transfer to the airport for your onward journey. Depart from Labuan Bajo with incredible memories of your Komodo National Park adventure."
                 }
-         
-            ],
-            "price" : 14500 
+              ],
+            "price" : 15500 
 
         },
         {
             "id" : 5,
-            "title" : "Beautiful Wayanad, Calicut, Kottakal",
-            "duration" : "5 Nights / 6 Days",
-            "destination":"kerala",
-            "location" : "Wayanad (2N) → Calicut (1N) → Kottakal (1N) → Kochi (1N)",
+            "title" : "Gili Islands, Indonesia",
+            "duration" : "4 Nights / 5 Days",
+            "destination":"Indonesia",
+            "location" : "Gili Trawangan (4N)",
             "description" : [
-                " Kerala is a sought-after tourist destination in India and all over, well-known for its expansive backwaters, beaches, and lush greenery. Its breathtaking natural beauty earned it the title `God's own country` , and it is no less than a paradise on earth, one that you get to experience by choosing one of Holidify’s Kerala tour packages!"
+                "The Gili Islands offer a paradise-like setting with white sandy beaches, turquoise waters, and vibrant marine life. Relax, snorkel, dive, or simply enjoy the tranquil island vibes!"
             ],
             "image" : [
-                  "https://www.holidify.com/images/cmsuploads/compressed/soochipara-waterfalls_20220915144034.jpg",
-                  "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2017/05/68.jpg",
-                  "https://www.holidify.com/images/compressed/3888.jpg?v=1.1",
-                  "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2014/11/neelimala-view-point.jpg"
+                  "https://media.gettyimages.com/id/1280601936/photo/woman-with-turtle-in-water-gili-air-indonesia.jpg?s=612x612&w=0&k=20&c=YugblVpobI5eHRs64WRrFzDRRq_BQv4Qe0bLvN3PfyQ=",
+                  "https://media.gettyimages.com/id/1405745665/photo/gili-meno-beach-and-island-in-indonesia.jpg?s=612x612&w=0&k=20&c=Dnh5aIwLqoZN4FyTMKa5IM_C3J7CMpXwbRYoQ9PwyqU=",
+                  "https://media.gettyimages.com/id/611072926/photo/tourists-in-the-gili-islands-in-lombok-indonesia.jpg?s=612x612&w=0&k=20&c=QpiU0KU34HTbJElxCnQBD0yWlgMxiCMkRxd5m1DU2FA=",
+                  "https://media.gettyimages.com/id/1255675303/photo/high-angle-view-of-an-exotic-island-of-indonesia-gili-meno-on-sunny-day.jpg?s=612x612&w=0&k=20&c=ckmSqNNyXsLw1r3MVv_9Ap7AKpY9RAh_ugfo2NNmegg="
             ],
-            "tour" : [
+            "tour": [
                 {
-                    "title" : "Day 1: Arrival in Wayand",
-                    "description" : "On arrival at Wayanad, transfer to the hotel and check in.Visit Banasura Sagar Dam"
-                    
+                  "title": "Day 1: Arrival in Gili Trawangan",
+                  "description": "Upon arrival in Gili Trawangan, check-in to your beachfront resort and spend the day at leisure. Enjoy the white sandy beaches, crystal-clear waters, and vibrant nightlife of the island. Overnight stay in Gili Trawangan."
                 },
                 {
-                    "title" : "Day 2: Wayanad Sightseeing",
-                    "description" : "Visit Kalpetta, Edakkal Cave, Kanthanpara Waterfalls, Heritage Museum, and Amabalavayal Farm."
-                }, 
-                {
-                    "title" : "Day 3: Wayanad to Kozhikode",
-                    "description" : "After check-in, proceed to Kappad beach, Tail temple, and a visit to Sargaalaya visit."
-
-                }, {
-                    "title" : "Day 4: Kozhikode to Kottakal",
-                    "description" : "Visit Kotakkal Arya Vaidya Sala, one of the main tourist attractions of Kerala. It is an Ayurvedic Therapy Center, and you can spend the afternoon relaxing and taking one of the sessions to calm your soul."
+                  "title": "Day 2: Snorkeling and Island Hopping",
+                  "description": "Embark on a snorkeling adventure and explore the underwater beauty of the Gili Islands. Visit popular snorkeling spots such as Turtle Point and Meno Wall. Afterward, hop on a boat to explore the neighboring islands of Gili Air and Gili Meno. Overnight stay in Gili Trawangan."
                 },
                 {
-                    "title" : "Day 5: Kottakal to Kochi",
-                    "description" : "Visit the Jewish Synagogue, St.Francis Church, Dutch Palace, Chinese Fishing Nets, etc. Return to the hotel."
+                  "title": "Day 3: Free Day for Relaxation",
+                  "description": "Spend the day at your own pace, enjoying the beaches, water activities, or simply relaxing by the pool. You can also explore the island on foot or by bicycle and discover local cafes, bars, and shops. Overnight stay in Gili Trawangan."
                 },
                 {
-                    "title" : "Day 6: Departure",
-                    "description" : "Proceed to Kochi airport to board the flight for your onward destination."
+                  "title": "Day 4: Sunset Horseback Riding",
+                  "description": "In the afternoon, embark on a unique horseback riding experience along the picturesque beaches of Gili Trawangan. Enjoy the stunning sunset views as you ride along the shore. Overnight stay in Gili Trawangan."
+                },
+                {
+                  "title": "Day 5: Departure",
+                  "description": "After breakfast, check out from your resort and transfer to the harbor for your onward journey. Depart from Gili Trawangan with wonderful memories of your island escape."
                 }
-         
-            ],
-            "price" : 17000 
+              ],
+            "price" : 27000 
 
         },
         {
             "id" : 26,
-            "title" : "Munnar Alleppey Tour Package with Ayurvedic Spa & Treatment",
-            "duration" : "5 Nights / 6 Days",
-            "destination":"kerala",
-            "location" : "Kochi(0N) → Munnar(2N) → Alleppey(3N)",
+            "title" : "Rajim Temples Tour",
+            "duration" : "2 Nights / 3 Days",
+            "destination":"Delhi",
+            "location" : "Raipur(2N) → Rajim(1N)",
             "description" : [
-                " Kerala is a sought-after tourist destination in India and all over, well-known for its expansive backwaters, beaches, and lush greenery. Its breathtaking natural beauty earned it the title `God's own country` , and it is no less than a paradise on earth, one that you get to experience by choosing one of Holidify’s Kerala tour packages!"
+                " Experience the exquisite beauty of the Rajim Temples, featuring stunning architectural designs and intricate carvings of various Hindu deities such as Lord Vishnu, Lord Rama, Lord Narasimha, and Goddess Durga"
             ],
             "image" : [
-                  "https://www.holidify.com/images/compressed/attractions/attr_59.jpg",
-                  "https://www.holidify.com/images/cmsuploads/compressed/ayurvedic-massage-foot_20190429184937.jpg",
-                  "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2016/06/Ayurvedic-massage-in-Rishikesh.jpg",
-                  "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2017/07/ayurvedic-massage-at-barefoot.jpg"
+               "https://media.istockphoto.com/id/1138359561/photo/the-chitrakote-falls-also-spelt-as-chitrakote-chitrakot-is-a-natural-waterfall-located-to-the.jpg?s=612x612&w=0&k=20&c=KQdETX4G-_SKEFX5ZEK8zd1GUo0iK2GBeL9cqpzScIs=",
+               "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRPgw8orkcircT2x5ebG2bTAg3xc7ENbCAaMsMA8cKew&s",
+               "https://c8.alamy.com/comp/CBP8J2/pearl-palace-moti-mahal-place-of-a-well-known-indian-festival-celebrated-CBP8J2.jpg",
+               "https://upload.wikimedia.org/wikipedia/commons/1/1b/Laxman_temple_at_sirpur%2Cchhattisgarh%2Cindia.JPG"
                  
             ],
             "tour" : [
-                {
-                    "title" : "Day 1: Kochi to Munnar",
-                    "description" : "Upon arrival at Kochi, drive to Munnar.On arrival in Munnar, check in to the hotel."
-                    
+               
+               {
+                    "title": "Day 1: Arrival in Raipur",
+                    "description": "Upon arrival at Raipur airport/railway station, embark on a 60 KM drive to Rajim. In the evening, enjoy sightseeing and shopping, including a visit to the Old Mahal. Overnight stay at Kawardha."
                 },
                 {
-                    "title" : "Day 2: Munnar Sightseeing",
-                    "description" : "After breakfast, proceed for a full day of sightseeing in Munnar.Visit places such as Echo Point, Kundala Dam, Tata Tea Museum, etc."
-                }, 
+                    "title": "Day 2: Rajim Temple Exploration",
+                    "description": "After breakfast, proceed to explore the magnificent Rajim Temples and witness their grandeur. Learn about the rich history and significance of each temple. In the evening, take part in a traditional aarti ceremony. Overnight stay in Rajim."
+                },
                 {
-                    "title" : "Day 3: Munnar to Alleppey",
-                    "description" : "After breakfast, proceed to Alleppey. On arrival in Alleppey, check in to the hotel. Afterward, go boating in Alleppey. Spend the rest of the day at leisure."
-
-                }, {
+                    "title": "Day 3: Departure",
+                    "description": "After breakfast, check out from the hotel and drive back to Raipur. En route, visit the famous Jatmai Temple. Upon arrival in Raipur, transfer to the airport/railway station for your onward journey back home."
+                 },
+                    {
                     "title" : "Day 4: Ayurvedic Massage & Treatment",
                     "description" : "After breakfast, do yoga for 2 hrs.Afterwards, ayurvedic massage and treatment for 3 hrs.After lunch rest for 2 hrs.In the evening,  yoga for 2 more hours.Overnight stay at the hotel."
                 },
@@ -268,200 +258,186 @@
         },
         {
             "id" : 21,
-            "title" : "Statue of Unity Tour Package with Cultural Ahmedabad",
-            "duration" : "3 Nights / 4 Days",
-            "location" : "Ahmedabad(2N) → Vadodara(1N)",
+            "title" : "Golden Triangle Tour",
+            "duration" : "6 Nights / 7 Days",
+            
+            "location" : "Delhi(2N) → Agra(2N) → Jaipur(2N)",
             "description" : [
-                "A rapidly growing metropolis, an industrial hub, an educational hotspot, and a city with a magnificent past - Ahmedabad is one of the most important cities in Gujarat. Located on the banks of the Sabarmati River, Ahmedabad is the former capital of Gujarat, and its delicious food, colourful culture is making it a fast-growing tourist destination. The historic city of Ahmedabad or the old part of the city was declared as the UNESCO World Heritage Site.",
-            "Home to a plethora of remarkable temples like Swaminarayan Temple, intriguing museums and classy markets, with a little bit of colonial history attached to it, Ahmedabad is an excellent example of how a city can still retain every bit of its old-world charm while still rapidly progressing on the path of globalisation.",
-            "Ahmedabad is famous for its textiles and its tie-dye bandhani handloom technique, which makes it a great place to shop. From bandhani sarees, dupattas to traditionally embroidered dress materials, and other local handicrafts.",
-            "Sabarmati Ashram, situated directly beside the Sabarmati river, is a quaint and peaceful ashram built by Mahatma Gandhi after he returned from South Africa. To this date, Gandhiji's living quarters are preserved here and is now used as a museum where visitors can learn all about his life and his teachings. The infamous Dandi Salt March, which was a crucial point in India's independence struggle, originated from this ashram."
+                "Embark on a mesmerizing journey through India's rich cultural heritage with the Golden Triangle Tour. Visit iconic landmarks, experience vibrant cities, and immerse yourself in the captivating history and architecture of Delhi, Agra, and Jaipur.",
+                "Marvel at the grandeur of the Taj Mahal, explore the magnificent forts and palaces of Jaipur, and discover the bustling markets and old-world charm of Delhi."
             ],
             "image" : [
-                "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1317845540_20191031110021_20191031110103.png",
-                "https://www.holidify.com/images/cmsuploads/compressed/Akshardham_Gandhinagar_Gujarat_20170803175920.jpg",
-                "https://www.holidify.com/images/compressed/dest_wiki_12514.jpg",
-                "https://www.holidify.com/images/cmsuploads/compressed/15225738140_cddeeded42_b_20170405165221_20190806170113.jpg",
-                "https://www.holidify.com/images/compressed/attractions/attr_1654.jpg",
-                "https://www.holidify.com/images/cmsuploads/compressed/5129689068_118d671872_b_20170609164516.jpg",
-                "https://www.holidify.com/images/cmsuploads/compressed/1024px-2T1A1747_20190729135522.jpg",
-                "https://www.holidify.com/images/cmsuploads/compressed/Sun_Temple,_Modhera_-_Sabha_Mandap_01_20180804140521.jpg"
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTteGHnUQMFfN2CabHQb62yTWuafydBcN3UUrosSm6I&s",
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE_5eqiw9q4N0_CbuOc8Q5hiRrTLsp0b7EgF3s8uu8&s",
+              "https://hips.hearstapps.com/hmg-prod/images/hawa-mahal-jaipur-india-royalty-free-image-484718881-1561471321.jpg",
+              "https://www.google.com/url?sa=i&url=https%3A%2F%2Fcrystalindiaholidays.com%2Fwhy-golden-triangle-tour-package-is-so-much-famous%2F&psig=AOvVaw2u9euZIfNcjif4i2vRZDNF&ust=1686818586706000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJCkhoqvwv8CFQAAAAAdAAAAABAE"
 
             ],
             "tour" : [
                 {
-                    "title" : "Day 1: Arrive at Ahmedabad",
-                    "description" : "On arrival at Ahmedabad, you will be picked up from the airport/railway station.Transfer to the hotel and check in to the hotel.Afterwards, visit Gandhi Ashram, Hutheesing Jain Temple, and Adalaj Step-well.Later visit Akshardham Temple and enjoy the sound & light show.In the evening, return to the hotel.Overnight stay at Ahmedabad."
-                    
-                },
-                {
-                    "title" : "Day 2: Ahmedabad Sightseeing",
-                    "description" : "After breakfast, proceed for sightseeing in Ahmedabad. Visit Sun Temple, Rani Ki Vav, Matrugaya, and Bindu Sarovar. Overnight stay in Ahmedabad."
-                }, 
-                {
-                    "title" : "Day 3: Ahmedabad to Vadodara",
-                    "description" : "After breakfast, check out from the hotel. Visit Statue of Unity, Museum, Viewing Gallery, Valley of Flower, and Sardar Sarovar Dam. Enjoy the laser light show at 7:00 PM (tentative). Drive to Vadodara. On arrival in Vadodara, check in to the hotel. Overnight stay at Vadodara."
-
-                },
-                {
-                    "title" : "Day 4: Departure",
-                    "description" : "After breakfast, visit Lakshmi Villas Palace and EME Temple. Later, spend the time at leisure or go shopping. In the evening, transfer to Vadodara/Ahmedabad Airport or railway station for your onward journey back home."
-                }
+                    "title": "Day 1: Arrival in Jaipur",
+                    "description": "Arrive at Jaipur airport and transfer to your hotel. Spend the day exploring the Pink City, visiting landmarks such as Amber Fort, City Palace, and Hawa Mahal. In the evening, explore the local markets and indulge in traditional Rajasthani cuisine. Overnight stay in Jaipur."
+                    },
+                    {
+                    "title": "Day 2: Jaipur City Tour",
+                    "description": "Embark on a full-day city tour of Jaipur. Visit Jantar Mantar, Jal Mahal, and Albert Hall Museum. Explore the vibrant bazaars and shop for handicrafts and textiles. Witness a mesmerizing sunset at Nahargarh Fort. Overnight stay in Jaipur."
+                    },
+                    {
+                    "title": "Day 3: Jodhpur Exploration",
+                    "description": "Drive to Jodhpur, the Blue City. Visit the majestic Mehrangarh Fort, Jaswant Thada, and Umaid Bhawan Palace. Explore the bustling streets of the old city and taste the local delicacies. Overnight stay in Jodhpur."
+                    },
+                    {
+                    "title": "Day 4: Jodhpur City Tour",
+                    "description": "Discover the rich heritage of Jodhpur with a city tour. Visit Mandore Gardens, Clock Tower, and Sardar Market. Experience the vibrant colors and traditions of Rajasthan. Overnight stay in Jodhpur."
+                    },
+                    {
+                    "title": "Day 5: Udaipur Arrival",
+                    "description": "Drive to Udaipur, the City of Lakes. Visit the enchanting Lake Pichola and enjoy a boat ride. Explore the magnificent City Palace and Jag Mandir. In the evening, witness a cultural dance performance. Overnight stay in Udaipur."
+                    },
+                    {
+                    "title": "Day 6: Udaipur Sightseeing",
+                    "description": "Embark on a full-day sightseeing tour of Udaipur. Visit the famous Saheliyon-Ki-Bari, Fateh Sagar Lake, and Jagdish Temple. Explore the narrow lanes of the old city and discover the traditional crafts and artwork. Overnight stay in Udaipur."
+                    }
             ],
-            "price" : 14500,
-            "destination" : "Gujarat"
+            "price" : 14000,
+            "destination" : "Delhi"
 
         },
         {
             "id" : 22,
-            "title" : "Heritage Bhuj and Dholavira Tour with Rann Utsav",
-            "duration" : "4 Nights / 5 Days",
-            "location" : "Bhuj(2N) → Hodka(2N)",
+            "title" : "Cultural Heritage Tour of Rajasthan",
+            "duration" : "6 Nights / 8 Days",
+            "location" : "Jaipur(2N) → Jodhpur(2N) → Udaipur(2N) → Pushkar(1N) → Jaipur(1N)",
             "description" : [
-                "Virtually an island that resembles the shape of a tortoise, Kutch is an erstwhile princely state of India holding onto its grandeur nature from the past. Kutch is probably one of the most beautiful, yet surreal places in India with the vast expanses of the white salt desert.  The place comes to life during the winters when the Rann Festival is held during December-February everywhere in which there are huge camp settlements with cultural programs, functions and adventure activities like hot-air ballooning.",
-                "Kutch is also among the largest district of India with a terribly low population density. Also, Kutch lies on the India-Pakistan border and you can see parts of Pakistan from Kutch. Kutch is also famous for crafts and embroidery works, Flamingo Sanctuary and Wild Ass Sanctuary. Bhuj is an ideal starting point to visit the Rann of Kutch. Beautiful beaches of Mandvi near Bhuj are also totally worth visiting during your trip to Kutch. Don't miss to see the ancient town of Dholavira."
+                "Embark on a captivating journey through the cultural heritage of Rajasthan, India's vibrant state known for its magnificent forts, palaces, and rich traditions.",
+                "Immerse yourself in the opulent royal history, explore the charming cities, and witness the colorful traditions of Rajasthan."
             ],
             "image" : [
-                "https://www.holidify.com/images/cmsuploads/compressed/shutterstock_1293713017(1)_20191205141054.jpg",
-                "https://www.holidify.com/images/compressed/2317.jpg?v=1.1",
-                "https://www.tripcrafters.com/agent/trip_photos/5d34a7cda42b17f3a7a6872865a741a7.jpg",
-                "https://www.tripcrafters.com/agent/trip_photos/4e68adfb7fe616c93b5cf81ce20a46eb.jpg",
-                "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/05/226.jpg",
-                "https://www.holidify.com/images/compressed/dest_wiki_1967.jpg",
-                "https://www.holidify.com/images/compressed/dest_wiki_3817.jpg"
+               "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Frajasthan&psig=AOvVaw2m3hKwPzFla9P4LMucoEjg&ust=1686818266825000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJDZ--6twv8CFQAAAAAdAAAAABAE",
+               "https://media.gettyimages.com/id/143176635/photo/happy-group-of-camel-drivers.jpg?s=612x612&w=gi&k=20&c=uljvyRcemwvBuG_GfOuz5zNhTUFxHFdTX_E7V6GKnhM=",
+               "https://media.istockphoto.com/id/805563154/photo/mehrangharh-fort-and-jaswant-thada-mausoleum-in-jodhpur-rajasthan-india.jpg?s=612x612&w=0&k=20&c=5r9UxPkz9mIkfAIFPLyTwqBQyqSO7mcAdQtcqGHOboA=",
+               "https://cdn.pixabay.com/photo/2020/09/20/14/53/corridor-5587351_1280.jpg",
+               "https://cdn.pixabay.com/photo/2021/04/06/11/22/hawa-mahal-6156123_1280.jpg"
             ],
             "tour" : [
                 {
-                    "title" : "Day 1: Arrival in Bhuj",
-                    "description" : "On arrival at Bhuj airport/railway station, check in to the homestay at Bhuj. In the evening, enjoy some sightseeing and shopping. Visit the Prag Mahal. Overnight stay at Bhuj."
-
+                "title": "Day 1: Arrival in Jaipur",
+                "description": "Arrive at Jaipur airport and transfer to your hotel. Spend the day exploring the Pink City, visiting landmarks such as Amber Fort, City Palace, and Hawa Mahal. In the evening, explore the local markets and indulge in traditional Rajasthani cuisine. Overnight stay in Jaipur."
                 },
                 {
-                    "title" : "Day 2: Excursion to Dholavira",
-                    "description" : "After breakfast, drive to Dholavira. Visit the archeological ruins. Enjoy the simple local food at the town center. Return to Bhuj. Overnight stay at Bhuj."
-
+                "title": "Day 2: Jaipur City Tour",
+                "description": "Embark on a full-day city tour of Jaipur. Visit Jantar Mantar, Jal Mahal, and Albert Hall Museum. Explore the vibrant bazaars and shop for handicrafts and textiles. Witness a mesmerizing sunset at Nahargarh Fort. Overnight stay in Jaipur."
                 },
                 {
-                    "title" : "Day 3: Bhuj to Mandvi to Hodka",
-                    "description" : "After breakfast, check out from the and drive to Mandvi. Enjoy the day at Mandvi beach. In the afternoon, drive to Hodka. On arrival in Hodka, check in to the hotel. Overnight stay at Hodka."
-
+                "title": "Day 3: Jodhpur Exploration",
+                "description": "Drive to Jodhpur, the Blue City. Visit the majestic Mehrangarh Fort, Jaswant Thada, and Umaid Bhawan Palace. Explore the bustling streets of the old city and taste the local delicacies. Overnight stay in Jodhpur."
                 },
                 {
-                    "title" : "Day 4: Excursion to Rann of Kutch",
-                    "description" : "After breakfast, spend the day at leisure and explore the village of Hodka. After lunch, drive to the Rann of Kutch. On arrival at Rann of Kutch, check-in at the Rann Utsav. Spend the evening visiting the many melas put up in the beautiful Shaminanas and indulging in some Kutchi food. Enjoy the evening on the Rann and the culture shows hosted by the Rann Utsav. Return to Hodka. Overnight stay at Hodka."
-
+                "title": "Day 4: Jodhpur City Tour",
+                "description": "Discover the rich heritage of Jodhpur with a city tour. Visit Mandore Gardens, Clock Tower, and Sardar Market. Experience the vibrant colors and traditions of Rajasthan. Overnight stay in Jodhpur."
                 },
                 {
-                    "title" : "Day 5: Departure",
-                    "description" : "After breakfast, check out from the hotel and drive to Bhuj. On the way, visit the famous Kalo Dungar and Naroni village. On arrival at Bhuj, transfer to the airport/railway station for your onward journey back home."
-
+                "title": "Day 5: Udaipur Arrival",
+                "description": "Drive to Udaipur, the City of Lakes. Visit the enchanting Lake Pichola and enjoy a boat ride. Explore the magnificent City Palace and Jag Mandir. In the evening, witness a cultural dance performance. Overnight stay in Udaipur."
+                },
+                {
+                "title": "Day 6: Udaipur Sightseeing",
+                "description": "Embark on a full-day sightseeing tour of Udaipur. Visit the famous Saheliyon-Ki-Bari, Fateh Sagar Lake, and Jagdish Temple. Explore the narrow lanes of the old city and discover the traditional crafts and artwork. Overnight stay in Udaipur."
                 }
 
             ],
-            "price" : 24633,
-            "destination" : "Gujarat"
+            "price" : 25633,
+            "destination" : "Rajasthan"
 
         },
         {
             "id" : 23,
-            "title" : "Wildlife & Beach of Gujarat: Gir with Diu Tour",
+            "title" : "Backwaters and Beaches Tour of Kerala",
             "duration" : "4 Nights / 5 Days",
-            "location" : "Sasangir (2N) → Diu(2N)",
+            "location" : "Cochin(2N) → Alleppey(1N) → Kovalam(2N) → Varkala(2N)",
             "description" : [
-                "Gir National Park and Wildlife Sanctuary is the only remaining home for the Asiatic Lions. Located in Talala Gir in Gujarat, the Sanctuary is a part of Kathiawar- Gir dry deciduous forests ecoregion. Gir National Park is closed from 16 June to 15 October every year and the best time for wildlife spotting is April and May.",
-                "Gir provides you with the unique experience of visiting a place which almost singularly plays a crucial and defining role in the preservation and sustaining of a certain species. The preservation of these lions was initiated by the Nawab of Junagadh when these were just about to enter the phase of extinction due to hunting.",
-                "The official count said that there were 411 lions in 2010. Also, there are roughly different 2375 species of fauna here with 38 species of mammals, over 300 species of birds, 37 species of reptiles and over 2000 species of insects. Other important wildlife forms found here are leopard, chausingha, spotted deer, hyena, sambar deer and chinkara."
+                "Experience the tranquil beauty of Kerala with the Backwaters and Beaches Tour. Explore the serene backwaters, relax on pristine beaches, and immerse yourself in the unique culture and natural wonders of 'God's Own Country'.",
+                "Cruise through the backwaters on a traditional houseboat, unwind on the golden sands, and rejuvenate with Ayurvedic therapies amidst picturesque surroundings."
             
             ],
             "image" : [
-                "https://www.holidify.com/images/cmsuploads/compressed/photo-1527073620320-77635188c627_20191011222401.jpg",
-                "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2017/08/Crocodile-Breeding-Farm.jpg",
-                "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2015/12/diu.jpg",
-                "https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2016/08/Cannon-on-walls-of-the-Portuguese-fort-in-the-Diu-town-in-Gujarat.jpg",
-                "https://www.holidify.com/images/compressed/3488.jpg?v=1.1",
-                "https://www.holidify.com/images/compressed/3495.jpg",
-                "https://holidify.com/images/attr_wiki/compressed/attr_wiki_3281.jpg",
-                "https://www.holidify.com/images/cmsuploads/compressed/10715835233_d1621f3c0c_b_20190701095540.jpg",
-                "https://www.holidify.com/images/compressed/3486.jpg?v=1.1"
+                "https://media.istockphoto.com/id/805563154/photo/mehrangharh-fort-and-jaswant-thada-mausoleum-in-jodhpur-rajasthan-india.jpg?s=612x612&w=0&k=20&c=5r9UxPkz9mIkfAIFPLyTwqBQyqSO7mcAdQtcqGHOboA=",
+                "https://www.shutterstock.com/image-photo/indian-cameleers-camel-driver-bedouin-260nw-1724207551.jpg",
+                "https://media.istockphoto.com/id/942152278/photo/gadisar-lake-at-jaisalmer-rajasthan-at-sunrise-with-ancient-temples-and-archaeological-ruins.jpg?s=612x612&w=0&k=20&c=HvhbHZ8HH_lAjAAI2pmqL4mUipyyAwy31qp5jjKQTO0="
             ],
             "tour" : [
                 {
-                    "title" : "Day 1: Arrival in Sasangir",
-                    "description" : "On arrival Sasangir, transfer to the hotel and check-in. In the afternoon, visit Gir Interpretation Zone at Devaliya, Crocodile breeding farm, and Gir Information centre. In the evening, watch a movie on lions at Gir Information centre. Overnight stay at the hotel."
-
-                },
-                {
-                    "title" : "Day 2: Gir National Park Safari",
-                    "description" : "After breakfast, enjoy the morning and evening game drives in Gir National Park. Overnight stay at the hotel."
-
-                },
-                {
-                    "title" : "Day 3: Sasangir to Diu",
-                    "description" : "After breakfast, proceed to Diu. On arrival in Diu, check in to the hotel. Spend the day at leisure and relax on the beach. Overnight stay at the hotel."
-
-                },
-                {
-                    "title" : "Day 4: Diu Sightseeing",
-                    "description" : "After breakfast, spend the morning at leisure. OR enjoy the wide variety of water sports facilities available at Nagoa Beach. Later, visit St. Paul's Church, Diu Museum, and Diu Fort. Overnight stay at the hotel."
-
-                },
-                {
-                    "title" : "Day 5: Departure",
-                    "description" : "After breakfast, check out from the hotel and transfer to the railway station or airport for your onward journey back home."
-
-                }
+                    "title": "Day 1: Arrival in Cochin",
+                    "description": "Arrive at Cochin airport and transfer to your hotel. Spend the day exploring the historical city, visiting landmarks such as Fort Kochi, Chinese Fishing Nets, and Mattancherry Palace. In the evening, enjoy a Kathakali dance performance. Overnight stay in Cochin."
+                    },
+                    {
+                    "title": "Day 2: Cochin Sightseeing",
+                    "description": "Embark on a full-day sightseeing tour of Cochin. Visit St. Francis Church, Jew Town, and the famous spice markets of Mattancherry. Explore the vibrant streets and savor the local cuisine. Overnight stay in Cochin."
+                    },
+                    {
+                    "title": "Day 3: Backwater Cruise in Alleppey",
+                    "description": "Drive to Alleppey and embark on a memorable backwater cruise on a traditional houseboat. Sail through the scenic canals, witness the village life, and indulge in delicious Kerala cuisine prepared on board. Overnight stay on the houseboat."
+                    },
+                    {
+                    "title": "Day 4: Beaches of Kovalam",
+                    "description": "Drive to Kovalam, a serene beach destination. Spend the day relaxing on the golden sands, swimming in the clear waters, and rejuvenating with Ayurvedic treatments. Witness a breathtaking sunset at Kovalam Beach. Overnight stay in Kovalam."
+                    },
+                    {
+                    "title": "Day 5: Explore Kovalam",
+                    "description": "Visit the famous attractions of Kovalam, including the Lighthouse Beach, Hawa Beach, and Vizhinjam Rock Cut Cave Temple. Enjoy water sports activities and relish fresh seafood by the beach. Overnight stay in Kovalam."
+                    },
+                    {
+                    "title": "Day 6: Tranquil Varkala",
+                    "description": "Drive to Varkala, a serene coastal town. Relax on the pristine beaches, explore the iconic Varkala Cliff, and take a dip in the natural springs at Papanasam Beach. Witness a mesmerizing sunset over the Arabian Sea. Overnight stay in Varkala."
+                    }
 
             ],
             "price" : 19500,
-            "destination" : "Gujarat"
+            "destination" : "Rajasthan"
 
         },
         
         {
             "id" : 24,
-            "title" : "Beautiful Gujarat with Dwarka & Somnath",
-            "duration" : "4 Nights / 5 Days",
-            "location" : "Ahmedabad(0N) → Jamnagar(1N) → Dwarka(1N) → Somnath(1N) → Rajkot(1N)",
+            "title" : "Adventure Trekking in the Himalayas",
+            "duration" : "10 Nights / 9Days",
+            "location" : "Manali(3N) → Kasol(2N) → Tosh(2N) → Bir Billing(2N)",
             "description" : [
-                "Somnath, literally meaning 'lord of the moon' is a pilgrim center and is home to one of the 12 Jyotirlingas. It is a town which derives much of its identity from the mythology, religion, and legends that surround it.",
-                "Primarily a temple town, Somnath is a place where a strong scent of religion and legends lingers around tourism and even daily life. Its spiritual environment is ornamented by the huge number of temples in the area, however, Somnath also offers beaches, museums and other attractions. While the Somnath temple and Somnath beach are the primary places to visit here, Gita Mandir, Balukha Tirtha, Kamnath Mahadev Temple, Somnath Museum are some of the other places that one can visit."
+                "Embark on an exhilarating adventure trekking expedition in the majestic Himalayas. Explore scenic trails, conquer high-altitude passes, and immerse yourself in the breathtaking beauty of nature.",
+                 "Experience the thrill of trekking through picturesque landscapes, camping under starry skies, and encountering diverse flora and fauna along the way."
             ],
             "image" : [
-                "https://www.holidify.com/images/cmsuploads/compressed/1024px-JagMandir_20190729162715.jpg",
-                "https://www.holidify.com/images/cmsuploads/compressed/1392_0_1377854374_20210615165606.jpg",
-                "https://www.tripcrafters.com/agent/trip_photos/1392_2_1377854374.jpg",
-                "https://www.tripcrafters.com/agent/trip_photos/1392_4_1377854374.jpg"
+             "https://static.toiimg.com/photo/93246451.cms",
+             "https://media.istockphoto.com/id/1284679139/photo/mountain-landscape-with-green-grass-meadows-scenic-camping-himalayas-peaks-alpine-from-the.jpg?s=612x612&w=0&k=20&c=HakKeu5JZYpVx-cEThJWXXKI3xWhbx1JIaiTXp2Q3BQ=",
+             "https://img.traveltriangle.com/blog/wp-content/uploads/2020/02/Valleys-In-Himachal-Pradesh-Cover.jpg",
+             "https://www.himachal.exploreindia.in/wordpress/wp-content/uploads/2013/05/hp1.jpg",
+             "https://c.ndtvimg.com/2023-04/vg4sohqo_atal-tunnel_625x300_19_April_23.jpg"
             ],
             "tour" : [
                 {
-                    "title" : "Day 1: Arrival in Jamnagar",
-                    "description" : "On arrival in Ahmedabad, proceed to Jamnagar. On arrival check in to the hotel. Visit Lakhota Lake & Lakhota Museum. In the evening, visit Bala Hanuman Temple known for its nonstop Ramdhun since 1956 and it is mentioned in the Guinness Book of World Records. The rest of the evening is free for shopping. Overnight stay at the hotel."
-
-                },
-                {
-                    "title" : "Day 2: Jamnagar to Dwarka",
-                    "description" : "Proceed to the sacred town of Dwarka. On arrival check in to the hotel. Visit Dwarkadeesh Temple. Take a holy dip in the Gomti river, later leave to visit Nageshwar Jyotirling, Gopi Talav, Bet Dwarka. On the way back, visit Rukmani Temple. In the evening, visit other temples in the coastal area. Attend evening aarti at Dwarkadish temple. Overnight stay at the hotel."
-
-                },
-                {
-                    "title" : "Day 3: Dwarka to Porbandar to Somnath",
-                    "description" : "In the morning depart to Porbandar. At Porbandar visit Kirti Mandir. Later proceed to Somnath On arrival check in to the hotel. Visit Bhalka Tirth, Triveni Ghat & Somnath Temple. In the evening, attend aarti and later watch light and sound show. Overnight stay at the hotel."
-
-                },
-                {
-                    "title" : "Day 4: Somnath to Rajkot",
-                    "description" : "Proceed to Rajkot. En-route visit Jalaram Temple at Virpur and Swaminarayan temple, Navlakha Palace and Vintage Car museum at Gondal. In the late evening arrive at Rajkot. On arrival check in to the hotel. Overnight stay at the hotel."
-
-                },
-                {
-                    "title" : "Day 5: Departure",
-                    "description" : "Proceed to Ahmedabad. On arrival in Ahmedabad, visit Hathising Jain Temple, Gandhi Ashram, City Museum & Kakaria Lake & Park. In the evening, you will be dropped at the railway station or airport."
-
-                }
+                    "title": "Day 1: Arrival in Manali",
+                    "description": "Arrive in Manali and check into your hotel. Spend the day acclimatizing to the altitude and exploring the scenic beauty of Manali. Visit local attractions such as Hadimba Temple and Mall Road. Overnight stay in Manali."
+                    },
+                    {
+                    "title": "Day 2: Solang Valley Adventure",
+                    "description": "Embark on an adventurous day trip to Solang Valley. Indulge in thrilling activities like paragliding, zorbing, and skiing (depending on the season). Enjoy the breathtaking mountain views and capture memorable moments. Overnight stay in Manali."
+                    },
+                    {
+                    "title": "Day 3: Trek to Kasol",
+                    "description": "Begin your trek to Kasol, a charming village nestled in the Parvati Valley. Enjoy the scenic beauty and serenity of the surroundings. Explore the local market and savor delicious Himachali cuisine. Overnight stay in Kasol."
+                    },
+                    {
+                    "title": "Day 4-5: Tosh Trek",
+                    "description": "Embark on a multi-day trek to Tosh, a quaint village surrounded by snow-capped peaks. Trek through picturesque trails, cross gushing streams, and camp under the starlit sky. Explore the village and interact with the locals. Overnight stays in Tosh."
+                    },
+                    {
+                    "title": "Day 6-7: Bir Billing",
+                    "description": "Head towards Bir Billing, a renowned destination for paragliding. Experience the adrenaline rush as you glide through the skies and enjoy panoramic views of the Himalayan range. Visit monasteries, explore nature trails, and soak in the serene atmosphere. Overnight stays in Bir Billing."
+                    }
 
             ],
             "price" : 15000,
-            "destination" : "Gujarat"
+            "destination" : "Himachal Pradesh"
 
         },
         {
@@ -562,7 +538,7 @@
                 }
             ],
             "price" : 14500,
-            "destination" : "Chhattisgarh"
+            "destination" : "Rajasthan"
 
         },
         {
