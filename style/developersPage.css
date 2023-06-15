@@ -1,0 +1,171 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #359381;
+}
+
+p {
+    text-align: justify;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 15%;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #359381;
+}
+
+.team-member p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.tech-stacks {
+    width: 45%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+
+.notes-resources {
+    width: 45%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.notes-resources a {
+  color: #275f54;
+  text-decoration: none;
+}
+
+.notes-resources a:hover {
+  text-decoration: underline;
+}
+
+
+.TechRes {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+    main {
+      padding: 10px;
+    }
+  
+    .team-member {
+      width: 100%;
+    }
+  
+    .TechRes {
+      flex-direction: column;
+    }
+  
+    .tech-stacks, .notes-resources {
+      width: 100%;
+    }
+  }
+  
+  /* For tablets */
+  @media only screen and (min-width: 601px) and (max-width: 960px) {
+    main {
+      padding: 20px;
+    }
+  
+    .team-member {
+      width: 25%;
+    }
+  
+    .TechRes {
+      flex-direction: column;
+    }
+  
+    .tech-stacks, .notes-resources {
+      width: 100%;
+    }
+  }
+  
+  /* For laptops */
+  @media only screen and (min-width: 961px) {
+    main {
+      padding: 40px;
+    }
+  
+    .team-member {
+      width: 15%;
+    }
+  
+    .TechRes {
+      flex-direction: row;
+    }
+  
+    .tech-stacks, .notes-resources {
+      width: 45%;
+    }
+  }
+  
