@@ -148,3 +148,43 @@ color: rgb(67, 64, 66);
 
 
 
+@media screen and (max-width: 768px) {
+    #img-slider {
+      width: 90%;
+      height: 250px;
+    }
+  
+    #description {
+      flex-direction: column;
+    }
+  
+    #card-description {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    #card-price-details {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #img-slider {
+      width: 100%;
+      height: 200px;
+    }
+  
+    #description {
+      flex-direction: column;
+      margin-top: 30px;
+    }
+  
+    #card-description,
+    #card-price-details {
+      width: 100%;
+    }
+  
+    #pricecard {
+      margin: 1em 0;
+    }
+  }
