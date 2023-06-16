@@ -15,7 +15,7 @@ h2 {
     text-align: center;
     font-size: 24px;
     margin-bottom: 20px;
-    color: #359381;
+    color: #000000;
 }
 
 p {
@@ -66,7 +66,7 @@ li {
 .team-member h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #359381;
+    color: #5a6664;
 }
 
 .team-member p {
@@ -96,7 +96,7 @@ li {
 }
 
 .notes-resources a {
-  color: #275f54;
+  color: #2d3130;
   text-decoration: none;
 }
 

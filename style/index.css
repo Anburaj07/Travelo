@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 body{
     margin :0;
-    background-color: #210002;
+    background-color: #240202;
     font-family: 'Poppins', sans-serif; 
     font-size: 15px;
 }
@@ -21,29 +21,29 @@ body{
     transition: 0.1s;
 }
 .banner .bg-1{
-    background-image: url('../IMAGES/img/0.png');
+    background-image: url('https://cdn.dribbble.com/users/1492844/screenshots/3307274/travel.gif');
 }
 .banner .bg-2{
-    background-image: url('../IMAGES/img/banner.png');
+    /* background-image: url('../IMAGES/img/banner.png'); */
 }
 .banner .bg-3{
-    background-image: url('../IMAGES/img/2.png');
+    /* background-image: url('../IMAGES/img/2.png'); */
 }
 .banner .bg-4{
-    background-image: url('../IMAGES/img/3.png');
+    /* background-image: url('../IMAGES/img/3.png'); */
 }
 .banner .bg-5{
-    background-image: url('../IMAGES/img/4.png');
+    /* background-image: url('../IMAGES/img/4.png'); */
 }
 .banner .bg-6{
-    background-image: url('../IMAGES/img/5.png');
+    /* background-image: url('../IMAGES/img/5.png'); */
   
 }
 .banner .bg-7{
-    background-image: url('../IMAGES/img/6.png');
+    /* background-image: url('../IMAGES/img/6.png'); */
 }
 .banner .bg-8{
-    background-image: url('../IMAGES/img/7.png');
+    background-image: url('../IMAGES/img/7t.png');
 }
 .banner .bg-9{
     background-image: url('../IMAGES/img/8.png');
@@ -56,17 +56,19 @@ body{
     text-align: center;
     font-size: 11rem;
     font-family: 'Pacifico', cursive;
-    color: #fff;
+    color: #000000;
 }
 .intro{
     min-height: 50vh;
-    color: #eee;
+    color: #fcfcfc;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif; 
 }
+
+
 .intro img{
     width: 130px;
     height: 130px;
@@ -83,7 +85,7 @@ body{
 .intro button{
     background-color: #FD0003;
     padding: 10px 50px;
-    border: 1px solid #591F1D;
+    border: 1px solid #929292;
     border-radius: 5px;
   
     color: #fff;
@@ -112,12 +114,62 @@ body{
 }
 
 
+
+.bottoncard{
+
+   
+    color: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 3rem;
+
+
+    
+
+}
+
+
+.litdiv {
+    
+
+
+   
+    color: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+  
+    /* align-items: center; */
+
+
+margin-left: 20%;   
+ font-family: 'Poppins', sans-serif; 
+    
+
+
+    
+
+
+}
+#planeimg{
+    display: flex;
+    margin-left: 10px;
+
+    justify-content: right;
+}
+#planeimg >img{
+    width: 50vh;
+}
+
 .library{
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
-    color: #fff;
+    color:  #fcfcfc;
+    font-size: 2rem;
 
     margin-bottom: 20px;
 }
@@ -135,5 +187,12 @@ body{
     }
     .library img{
         height: 300px;
+    }
+    #planeimg{
+        display: flex;
+        margin-left: 1px;
+    
+        justify-content: center;
+
     }
 }
