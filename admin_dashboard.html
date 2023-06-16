@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("admin_header.html");
+            $("#footer").load("admin_footer.html");
+        });
+    </script>
+
+    <title>Dashboard</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+
+        #container {
+            margin: 0 1.5em;
+        }
+
+        #container>h2 {
+            color: #000;
+            margin: 1.3em 1em;
+
+        }
+
+        #boxes {
+            display: flex;
+
+        }
+
+        #boxes>div {
+            width: fit-content;
+            height: fit-content;
+            background-color: #1b2c39;
+            margin: 10px;
+            border-radius: 50px;
+            display: flex;
+            padding: 25px 50px 0px;
+            font-size: larger;
+            font-weight: bold;
+            color: white;
+
+        }
+
+        #boxes>div img {
+            width: 25vh;
+        }
+
+        #boxes>div h4 {
+            color: rgb(219, 219, 219);
+        }
+
+        .fa-bars {
+            padding: 10px;
+            color: white;
+        }
+
+
+
+        /* data */
+        #packages_data,
+        #users_data,
+        #sales_data,
+        #admin_data {
+            margin: 3em 1.5em;
+        }
+
+        #heading_packages,
+        #heading_users,
+        #heading_sales,
+        #heading_admin {
+            margin: 1.5em 0;
+        }
+
+        .styled-table {
+            border-collapse: collapse;
+            margin: 25px auto;
+            text-align: center;
+            font-size: large;
+            width: 100%;
+
+            font-family: 'Poppins', sans-serif;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .styled-table th {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .styled-table thead tr {
+            background-color: #7cbba8;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .styled-table td {
+            padding: 12px 15px;
+        }
+
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #7cbba8;
+        }
+
+        /* .styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #7cbba8;
+} */
+
+        /* button style */
+
+        .edit_button button {
+            font-family: inherit;
+            background: rgb(48, 158, 48);
+            color: white;
+            padding: 0.7em 1em;
+            cursor: pointer;
+            margin: auto;
+            padding-left: 0.9em;
+            display: flex;
+            font-size: large;
+            font-family: 'Poppins', sans-serif;
+            align-items: center;
+            border: none;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.2s;
+        }
+
+        .edit_button button span {
+            display: block;
+            margin-left: 0.3em;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .edit_button button svg {
+            display: block;
+            transform-origin: center center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .edit_button button:hover .svg-wrapper {
+            animation: fly-1 0.6s ease-in-out infinite alternate;
+        }
+
+        .edit_button button:hover svg {
+            transform: translateX(1.2em) rotate(45deg) scale(1.1);
+        }
+
+        .edit_button button:hover span {
+            transform: translateX(5em);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        @keyframes fly-1 {
+            from {
+                transform: translateY(0.1em);
+            }
+
+            to {
+                transform: translateY(-0.1em);
+            }
+        }
+
+        .delete_button button {
+            width: 150px;
+            height: 50px;
+            margin: auto;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            background: red;
+            border: none;
+            border-radius: 16px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+            background: #e62222;
+        }
+
+        .delete_button button,
+        .delete_button button span {
+            transition: 200ms;
+        }
+
+        .delete_button button .text {
+            transform: translateX(35px);
+            color: white;
+            font-weight: bold;
+        }
+
+        .delete_button button .icon {
+            position: absolute;
+            border-left: 1px solid #c41b1b;
+            transform: translateX(110px);
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .delete_button button svg {
+            width: 15px;
+            fill: #eee;
+        }
+
+        .delete_button button:hover {
+            background: #ff3636;
+        }
+
+        .delete_button button:hover .text {
+            color: transparent;
+        }
+
+        .delete_button button:hover .icon {
+            width: 150px;
+            border-left: none;
+            transform: translateX(0);
+        }
+
+        .delete_button button:focus {
+            outline: none;
+        }
+
+        .delete_button button:active .icon svg {
+            transform: scale(0.8);
+        }
+
+
+        /* optionsdata */
+        .optionsdata {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* searchbar */
+        #searchbar {
+            width: 100%;
+            margin: auto;
+        }
+
+        #searchbar input,
+        select {
+            width: auto;
+            margin: .3rem;
+            background-color: #1b2c39;
+            color: #fff;
+            padding: .45rem 1rem;
+            min-height: 40px;
+            border-radius: 4px;
+            font-family: 'Poppins', sans-serif;
+            outline: none;
+            border: none;
+            line-height: 1.15;
+            box-shadow: 0px 10px 20px -18px;
+        }
+
+        #searchbar input::placeholder,
+        select::placeholder {
+            color: #fff;
+        }
+
+        #searchbar input:focus,
+        select:focus {
+            border-bottom: 2px solid #7cbba8;
+            border-radius: 4px 4px 2px 2px;
+        }
+
+        #searchbar input:hover,
+        select:hover {
+            outline: 1px solid lightgrey;
+        }
+
+
+
+        #searchbar select {
+            padding: .15rem .5rem;
+        }
+
+
+        /* add new */
+        #newdata {
+            width: 100%;
+        }
+
+        .cta {
+            position: relative;
+            margin: auto;
+            padding: 12px 18px;
+            transition: all 0.2s ease;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+
+        .cta:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            border-radius: 50px;
+            background: #b1dae7;
+            width: 45px;
+            height: 45px;
+            transition: all 0.3s ease;
+        }
+
+        .cta span {
+            position: relative;
+            font-family: "Ubuntu", sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            color: #234567;
+        }
+
+        .cta svg {
+            position: relative;
+            top: 0;
+            margin-left: 10px;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke: #234567;
+            stroke-width: 2;
+            transform: translateX(-5px);
+            transition: all 0.3s ease;
+        }
+
+        .cta:hover:before {
+            width: 100%;
+            background: #b1dae7;
+        }
+
+        .cta:hover svg {
+            transform: translateX(0);
+        }
+
+        .cta:active {
+            transform: scale(0.95);
+        }
+
+
+        /* fix button */
+        .gotop {
+            background-color: #7cbba8;
+            /* padding: 10px 20px; */
+            font-size: 30px;
+            padding-top: 7px;
+            width: 1.5em;
+            height: 1.5em;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            border-radius: 50%;
+            color: #fff;
+            font-weight: bolder;
+
+        }
+
+        #mybutton {
+            border-radius: 1em;
+
+            position: fixed;
+            bottom: 1.5em;
+            right: 2em;
+
+        }
+
+        /* media */
+        @media only screen and (max-width: 1044px) and (min-width: 781px) {
+            #boxes>div {
+                flex-wrap: wrap;
+            }
+
+            .optionsdata {
+                flex-direction: column;
+            }
+        }
+
+        @media only screen and (max-width: 780px) {
+
+            #boxes>div,
+            #boxes {
+                flex-wrap: wrap;
+            }
+
+            #main h1 {
+                font-size: 7vw;
+            }
+
+            .optionsdata {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <section id="container">
+        <h2>Welcome, Temp</h2>
+        <div id="boxes">
+            <div id="box1">
+                <div class="contain">
+                    <h4>Sales Made Today</h4>
+                    <p id="todaySales"></p>
+                </div>
+                <div class="img_div">
+                    <img src="./img/upsales.png" alt="sales">
+                </div>
+            </div>
+            <div id="box2">
+                <div class="contain">
+                    <h4>Sales Made This Week</h4>
+                    <p id="weeklySales"></p>
+                </div>
+                <div class="img_div">
+                    <img src="./img/weeksales.png" alt="sales">
+                </div>
+            </div>
+            <div id="box3">
+                <div class="contain">
+                    <h4>Sales Made This Month</h4>
+                    <p id="monthlySales"></p>
+                </div>
+                <div class="img_div">
+                    <img src="./img/sales.png" alt="sales">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="packages_data" style="overflow-x:auto;">
+        <h1 id="heading_packages">Packages</h1>
+        <div class="optionsdata">
+            <div id="newdata">
+                <button class="cta">
+                    <span>Add New</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </button>
+            </div>
+            <div id="searchbar">
+                <select name="type" id="type">
+                    <option value="title">Type</option>
+                    <option value="id">ID</option>
+                    <option value="title">Package Name</option>
+                    <option value="destination">destination</option>
+                </select>
+                <input class="input" id="search" name="text" placeholder="Search..." type="search">
+            </div>
+            <!-- <div id="filteringdata">
+                <select name="filtering" id="filtering">
+                    <option value="">Filter By</option>
+                    <option value="asc">Low To High</option>
+                    <option value="desc">High To Low</option>
+                </select>
+            </div> -->
+            <div id="sortingdata">
+                <select name="sorting" id="sorting">
+                    <option value="">Sort By Price</option>
+                    <option value="asc">Low To High</option>
+                    <option value="desc">High To Low</option>
+                </select>
+            </div>
+        </div>
+        <table class="styled-table responsive">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Package Name</th>
+                    <th>Destination</th>
+                    <th>Duration</th>
+                    <th>Price</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="package_tbody">
+
+            </tbody>
+        </table>
+
+    </section>
+    <section id="sales_data" style="overflow-x:auto;">
+        <h1 id="heading_sales">Sales</h1>
+        <div class="optionsdata">
+            <div id="newdata">
+                <button class="cta" id="sales_add">
+                    <span>Add New</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </button>
+            </div>
+            <div id="searchbar">
+                <select name="type" id="typeofsales">
+                    <option value="package_name">Type</option>
+                    <option value="id">ID</option>
+                    <option value="name">User Name</option>
+                    <option value="package_name">Package Name</option>
+                    <option value="email">Email</option>
+                </select>
+                <input class="input" id="searchinsales" name="text" placeholder="Search..." type="search">
+            </div>
+            <div id="sortingdata">
+                <select name="sortingbybill" id="sortingbybill">
+                    <option value="">Sort By Bill</option>
+                    <option value="asc">Low To High</option>
+                    <option value="desc">High To Low</option>
+                </select>
+            </div>
+        </div>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Package Name</th>
+                    <th>User Name</th>
+                    <th>Email</th>
+                    <th>Bill</th>
+                    <th>TimeStamp</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="sales_tbody">
+
+            </tbody>
+        </table>
+
+    </section>
+    <section id="users_data" style="overflow-x:auto;">
+        <h1 id="heading_users">Users</h1>
+        <div class="optionsdata">
+            <div id="newdata">
+                <button class="cta" id="user_add">
+                    <span>Add New</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </button>
+            </div>
+            <div id="searchbar">
+                <select name="type" id="typeofusers">
+                    <option value="name">Type</option>
+                    <option value="id">ID</option>
+                    <option value="name">Name</option>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+
+                </select>
+                <input class="input" id="searchinusers" name="text" placeholder="Search..." type="search">
+
+            </div>
+            <div id="sortingdata">
+                <select name="sortingbyuser" id="sortingbyuser">
+                    <option value="">Sort By Name</option>
+                    <option value="asc">A to Z</option>
+                    <option value="desc">Z to A</option>
+                </select>
+            </div>
+        </div>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Phone</th>
+                    <th>State</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="user_tbody">
+
+            </tbody>
+        </table>
+    </section>
+    <section id="admin_data" style="overflow-x:auto;">
+        <h1 id="heading_admin">Admin</h1>
+        <div class="optionsdata">
+            <div id="newdata">
+                <button class="cta" id="admin_add">
+                    <span>Add New</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </button>
+            </div>
+            <div id="searchbar">
+                <select name="type" id="typeofadmin">
+                    <option value="username">Type</option>
+                    <option value="id">ID</option>
+                    <option value="username">UserName</option>
+                    <option value="email">Email</option>
+                </select>
+                <input class="input" id="searchinadmin" name="text" placeholder="Search..." type="search">
+            </div>
+
+            <div id="sortingdata">
+                <select name="sortingbyname" id="sortingbyname">
+                    <option value="">Sort By Name</option>
+                    <option value="asc">A to Z</option>
+                    <option value="desc">Z to A</option>
+                </select>
+            </div>
+        </div>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>User Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="admin_tbody">
+
+            </tbody>
+        </table>
+
+    </section>
+
+    <section id="btn_fx">
+        <div id="mybutton">
+            <button class="gotop" onclick="sendtop()">^</button>
+        </div>
+    </section>
+</body>
+<script src="https://kit.fontawesome.com/4f987be9b3.js" crossorigin="anonymous"></script>
+<script>
+    let body = document.querySelector('#package_tbody');
+    let tbody = document.querySelector('tbody');
+    let type = document.querySelector('#type');
+    let search = document.querySelector("#search");
+    let sorting = document.querySelector("#sorting");
+    let heading = document.querySelector('#container > h2');
+    let cta = document.querySelector('.cta');
+    let todaySales = document.querySelector('#todaySales');
+    let weeklySales = document.querySelector('#weeklySales');
+    let monthlySales = document.querySelector('#monthlySales');
+    let todaydata = 0;
+    let weekdata = 0;
+    let monthdata = 0;
+
+
+    let admindata = JSON.parse(localStorage.getItem('AdminData')) || [];
+
+
+    heading.textContent = "Welcome, " + admindata.username;
+
+    // 2023-06-30
+    const API = "https://vouge-pocket-hogf.onrender.com/packages?_sort=id&_order=asc";
+    const BaseAPI = "https://trypot-nation-dkah.onrender.com/packages";
+    const UserAPI = "https://trypot-nation-dkah.onrender.com/users";
+    const SalesAPI = "https://trypot-nation-dkah.onrender.com/sales";
+    const AdminAPI = "https://trypot-nation-dkah.onrender.com/login";
+    let searchAPI = "https://trypot-nation-dkah.onrender.com/packages";
+    // sendtop
+    function sendtop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    operations(API);
+    fetchSalesData(SalesAPI);
+    fetchUserData(UserAPI);
+    fetchAdminData(AdminAPI);
+
+    // admin
+    let admin_tbody = document.querySelector("#admin_tbody");
+    let typeofadmin = document.querySelector("#typeofadmin");
+    let sortingbyname = document.querySelector("#sortingbyname");
+    let searchinadmin = document.querySelector("#searchinadmin");
+    let admin_add = document.querySelector("#admin_add");
+    // admin search
+    searchinadmin.addEventListener('input', () => {
+        if (searchinadmin.value === "") {
+            fetchAdminData(AdminAPI);
+        } else {
+            fetchAdminData(`${AdminAPI}?${typeofadmin.value}_like=${searchinadmin.value}`);
+
+        }
+    })
+
+    // admin sorting
+    sortingbyname.addEventListener('change', () => {
+        if (sortingbyname.value === "") {
+            fetchAdminData(AdminAPI);
+        } else {
+            fetchAdminData(`${AdminAPI}?_sort=username&_order=${sortingbyname.value}`);
+        }
+    });
+
+    admin_add.addEventListener('click', () => {
+        localStorage.setItem('addnew', JSON.stringify({
+            addnew: true
+        }));
+        window.location.href = "admin_edit_admin.html";
+    });
+
+    async function fetchAdminData(AdminAPI) {
+        let res = await fetch(AdminAPI);
+        let data = await res.json();
+        admin_tbody.innerHTML = null;
+        data.forEach(element => {
+            admin_tbody.append(CreateAdmin(element));
+        })
+    }
+    function CreateAdmin(element) {
+        let tr = document.createElement('tr');
+        let td1 = document.createElement('td');
+        let td2 = document.createElement('td');
+        let td6 = document.createElement('td');
+        let td3 = document.createElement('td');
+        let td4 = document.createElement('td');
+        let td5 = document.createElement('td');
+
+        td1.innerHTML = element.id;
+        td2.innerHTML = element.username;
+        td6.innerHTML = element.email;
+        td3.innerHTML = element.password;
+        td4.className = "edit_button";
+        td4.innerHTML = edit_btn();
+        td4.addEventListener('click', () => {
+            localStorage.setItem('edit_admin', JSON.stringify(element));
+            window.location.href = 'admin_edit_admin.html';
+        });
+        td5.innerHTML = delete_btn();
+        td5.className = "delete_button";
+
+        td5.addEventListener("click", () => {
+            let ans = confirm(`ID ${element.id} will delete, are you sure?`);
+
+            if (ans === true) {
+                deleting();
+                async function deleting() {
+                    try {
+                        let res = await fetch(`${AdminAPI}/${element.id}`, {
+                            method: "DELETE",
+                        });
+                        if (res.ok) {
+                            alert(`Deleted`);
+                            location.reload();
+                        }
+                    } catch (error) {
+                        console.log(error);
+                    }
+                }
+            }
+
+        })
+
+
+        tr.append(td1, td2, td6, td3, td4, td5);
+        return tr;
+    }
+
+
+
+
+    // sales completed
+    let typeofsales = document.querySelector('#typeofsales');
+    let searchinsales = document.querySelector('#searchinsales');
+    let sortingbybill = document.querySelector('#sortingbybill');
+    let sales_tbody = document.querySelector("#sales_tbody");
+    let sales_add = document.querySelector('#sales_add');
+
+    // sales search
+    searchinsales.addEventListener('input', () => {
+        if (searchinsales.value === "") {
+            fetchSalesData(SalesAPI);
+        } else {
+            fetchSalesData(`${SalesAPI}?${typeofsales.value}_like=${searchinsales.value}`);
+
+        }
+    })
+
+    // sales sorting
+    sortingbybill.addEventListener('change', () => {
+        if (sortingbybill.value === "") {
+            fetchSalesData(API);
+        } else {
+            fetchSalesData(`${SalesAPI}?_sort=bill&_order=${sortingbybill.value}`);
+        }
+    });
+
+    sales_add.addEventListener('click', () => {
+        localStorage.setItem('addnew', JSON.stringify({
+            addnew: true
+        }));
+        window.location.href = "admin_edit_sales.html";
+    });
+    async function fetchSalesData(SalesAPI) {
+        try {
+            let res = await fetch(SalesAPI);
+            let data = await res.json();
+            sales_tbody.innerHTML = "";
+            data.forEach(element => {
+                sales_tbody.append(CreateSales(element));
+            })
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    function CreateSales(element) {
+        let tr = document.createElement('tr');
+        let td1 = document.createElement('td');
+        let td2 = document.createElement('td');
+        let td3 = document.createElement('td');
+        let td4 = document.createElement('td');
+        let td5 = document.createElement('td');
+        let td8 = document.createElement('td');
+        let td6 = document.createElement('td');
+
+        td6.className = "edit_button";
+        td6.addEventListener('click', () => {
+            localStorage.setItem('edit_sales', JSON.stringify(element));
+            window.location.href = 'admin_edit_sales.html';
+        });
+        let td7 = document.createElement('td');
+        td7.className = "delete_button";
+
+        td7.addEventListener("click", () => {
+            let ans = confirm(`ID ${element.id} will delete, are you sure?`);
+
+            if (ans === true) {
+                deleting();
+                async function deleting() {
+                    try {
+                        let res = await fetch(`${SalesAPI}/${element.id}`, {
+                            method: "DELETE",
+                        });
+                        if (res.ok) {
+                            alert(`Deleted`);
+                            location.reload();
+                        }
+                    } catch (error) {
+                        console.log(error);
+                    }
+                }
+            }
+
+        })
+
+
+        let curr = new Date();
+        let prev = new Date(element.timestamp);
+        let difference = curr.getTime() - prev.getTime();
+        let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
+        if (TotalDays < 8) {
+            weekdata = weekdata + element.bill;
+            weeklySales.textContent = "₹ " + weekdata + ".00";
+        }
+
+        if (TotalDays < 30) {
+            monthdata = monthdata + element.bill;
+            monthlySales.textContent = "₹ " + monthdata + ".00";
+        }
+
+        if (TotalDays <= 1) {
+            todaydata = todaydata + element.bill;
+            todaySales.textContent = "₹ " + todaydata + ".00";
+        }
+
+        td1.innerHTML = element.id;
+        td2.innerHTML = element.package_name;
+        td3.innerHTML = element.name;
+        td4.innerHTML = element.email;
+        td5.innerHTML = element.bill;
+        td8.innerHTML = element.timestamp;
+        td6.innerHTML = edit_btn();
+        td7.innerHTML = delete_btn();
+
+        tr.append(td1, td2, td3, td4, td5, td8, td6, td7);
+        return tr;
+    }
+
+
+    // user completed
+    let user_tbody = document.querySelector('#user_tbody');
+    let user_add = document.querySelector('#user_add');
+    let searchinusers = document.querySelector('#searchinusers');
+    let typeofusers = document.querySelector('#typeofusers');
+    let sortingbyuser = document.querySelector('#sortingbyuser');
+    // user search
+    searchinusers.addEventListener('input', () => {
+        if (searchinusers.value === "") {
+            fetchUserData(UserAPI);
+        } else {
+            fetchUserData(`${UserAPI}?${typeofusers.value}_like=${searchinusers.value}`);
+
+        }
+    })
+
+    // user sorting
+    sortingbyuser.addEventListener('change', () => {
+        if (sortingbyuser.value === "") {
+            fetchUserData(UserAPI);
+        } else {
+            fetchUserData(`${UserAPI}?_sort=name&_order=${sortingbyuser.value}`);
+        }
+    });
+
+    user_add.addEventListener('click', () => {
+        localStorage.setItem('addnew', JSON.stringify({
+            addnew: true
+        }));
+        window.location.href = "admin_edit_users.html";
+    })
+    async function fetchUserData(UserAPI) {
+        try {
+            let res = await fetch(UserAPI);
+            let data = await res.json();
+            user_tbody.innerHTML = "";
+            data.forEach(element => {
+                user_tbody.append(CreateUser(element));
+            })
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    function CreateUser(element) {
+        let tr = document.createElement('tr');
+
+        let td1 = document.createElement('td');
+        let td2 = document.createElement('td');
+        let td3 = document.createElement('td');
+        let td4 = document.createElement('td');
+        let td5 = document.createElement('td');
+        let td6 = document.createElement('td');
+        let td7 = document.createElement('td');
+        td7.className = "edit_button";
+        td7.addEventListener('click', () => {
+            localStorage.setItem('edit_users', JSON.stringify(element));
+            window.location.href = 'admin_edit_users.html';
+        });
+        let td8 = document.createElement('td');
+        td8.className = "delete_button";
+
+        td8.addEventListener("click", () => {
+            let ans = confirm(`ID ${element.id} will delete, are you sure?`);
+
+            if (ans === true) {
+                deleting();
+                async function deleting() {
+                    try {
+                        let res = await fetch(`${UserAPI}/${element.id}`, {
+                            method: "DELETE",
+                        });
+                        if (res.ok) {
+                            alert(`Deleted`);
+                            location.reload();
+                        }
+                    } catch (error) {
+                        console.log(error);
+                    }
+                }
+            }
+
+        })
+
+
+        td1.innerHTML = element.id;
+        td2.innerHTML = element.name;
+        td3.innerHTML = element.email;
+        td4.innerHTML = element.password;
+        td5.innerHTML = element.phone;
+        td6.innerHTML = element.state;
+        td7.innerHTML = edit_btn();
+        td8.innerHTML = delete_btn();
+
+        tr.append(td1, td2, td3, td4, td5, td6, td7, td8);
+        return tr;
+    }
+
+
+    // packages data
+    // add new data
+    cta.addEventListener('click', () => {
+        let len = localStorage.getItem('DataLength');
+        localStorage.setItem('addnew', JSON.stringify({
+            // id: Number(len) + 1,
+            addnew: true
+        }));
+        window.location.href = "admin_edit_packages.html";
+    });
+    // searching
+
+    search.addEventListener('input', () => {
+        if (search.value == "") {
+            operations(BaseAPI);
+        } else {
+            operations(`${BaseAPI}?${type.value}_like=${search.value}`);
+        }
+
+    })
+
+
+    // sorting 
+    sorting.addEventListener('change', () => {
+        if (sorting.value === "") {
+            operations(API);
+        } else {
+            console.log(sorting.value);
+            let changeAPI = `${BaseAPI}?_sort=price&_order=${sorting.value}`;
+
+            operations(changeAPI);
+        }
+    });
+
+    // async function fetchData(){
+    //     try {
+    //         let res = await fetch(`${API}?_sort=id&_order=asc`);
+    //         let data = await res.json();
+    //         console.log(data);
+    //         tbody.innerHTML = null;
+    //        
+    //         data.forEach(function(item){
+    //             tbody.append(DisplayData(item));
+    //         });
+    //         
+    //     } catch (error) {
+    //         console.log(error);
+    //     }
+    // }
+
+    async function operations(changeAPI) {
+        try {
+            let res = await fetch(changeAPI);
+            let data = await res.json();
+            // console.log(data);
+            tbody.innerHTML = null;
+            localStorage.setItem('DataLength', data.length);
+            data.forEach(function (item) {
+                tbody.append(DisplayData(item));
+            });
+
+
+        } catch (error) {
+            console.log(error);
+        }
+    }
+    function DisplayData(item) {
+        let tr = document.createElement('tr');
+        let td1 = document.createElement('td');
+        let td2 = document.createElement('td');
+        let td3 = document.createElement('td');
+        let td4 = document.createElement('td');
+        let td5 = document.createElement('td');
+        let td6 = document.createElement('td');
+        let td7 = document.createElement('td');
+
+        td1.textContent = item.id;
+        td2.textContent = item.title;
+        td3.textContent = item.destination;
+        td4.textContent = item.duration;
+        td5.textContent = item.price;
+
+        td6.className = "edit_button";
+        td6.innerHTML = edit_btn();
+        td6.addEventListener('click', () => {
+            console.log(item.id);
+            localStorage.setItem('edit', JSON.stringify(item));
+            window.location.href = 'admin_edit_packages.html';
+        });
+
+        td7.className = "delete_button";
+        td7.innerHTML = delete_btn();
+
+        td7.addEventListener("click", () => {
+            let ans = confirm(`ID ${item.id} will delete, are you sure?`);
+
+            if (ans === true) {
+                deleting();
+                async function deleting() {
+                    try {
+                        let res = await fetch(`${BaseAPI}/${item.id}`, {
+                            method: "DELETE",
+                        });
+                        if (res.ok) {
+                            alert(`Deleted`);
+                            location.reload();
+                        }
+                    } catch (error) {
+                        console.log(error);
+                    }
+                }
+            }
+
+        })
+
+        tr.append(td1, td2, td3, td4, td5, td6, td7);
+        return tr;
+    }
+
+
+    function edit_btn() {
+        return `<button>
+  <div class="svg-wrapper-1">
+    <div class="svg-wrapper">
+      <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+  <span>Edit</span>
+</button>`;
+
+    }
+    function delete_btn() {
+        return `<button class="noselect"><span class="text">Delete</span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path></svg></span></button>`;
+    }
+
+
+    // side bar
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+</script>
+
+</html>
