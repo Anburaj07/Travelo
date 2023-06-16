@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data Management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("admin_header.html");
+            $("#footer").load("admin_footer.html");
+        });
+    </script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif !important;
+
+        }
+
+        #container {
+            margin: 1.5em;
+
+        }
+
+        /* design => change width */
+        #container input:not(#submit),
+        textarea {
+            width: 70vw;
+            outline: 0;
+            border: 1px solid rgba(105, 105, 105, 0.397);
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            font-size: larger;
+        }
+
+        tr>td:nth-child(1) {
+            float: right;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+
+        /* submit */
+        .button {
+            position: relative;
+            overflow: hidden;
+            height: 3rem;
+            padding: 0 2rem;
+            border-radius: 1rem;
+            background: #000000;
+            background-size: 400%;
+            color: #ffffff;
+            border: none;
+        }
+
+        .button:hover::before {
+            transform: scaleX(1);
+        }
+
+        .button-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: 0 50%;
+            width: 100%;
+            height: inherit;
+            border-radius: inherit;
+            background: linear-gradient(82.3deg,
+                    rgb(13, 119, 78) 10.8%,
+                    #7cbba8 94.3%);
+            transition: all 0.475s;
+        }
+
+        #submit {
+            color: white;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* buttons */
+        #cancelling {
+            width: 150px;
+            height: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            background: red;
+            border: none;
+            border-radius: 16px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+            background: #e62222;
+        }
+
+        #cancelling,
+        #cancelling span {
+            transition: 200ms;
+        }
+
+        #cancelling .text {
+            transform: translateX(35px);
+            color: white;
+            font-weight: bold;
+        }
+
+        #cancelling .icon {
+            position: absolute;
+            border-left: 1px solid #c41b1b;
+            transform: translateX(110px);
+            font-family: 'Poppins', sans-serif;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #cancelling svg {
+            width: 15px;
+            fill: #eee;
+        }
+
+        #cancelling:hover {
+            background: #ff3636;
+        }
+
+        #cancelling:hover .text {
+            color: transparent;
+        }
+
+        #cancelling:hover .icon {
+            width: 150px;
+            border-left: none;
+            transform: translateX(0);
+        }
+
+        #cancelling:focus {
+            outline: none;
+        }
+
+        #cancelling:active .icon svg {
+            transform: scale(0.8);
+        }
+
+        #adding {
+            font-family: inherit;
+            background: rgb(48, 158, 48);
+            color: white;
+            padding: 0.7em 1em;
+            cursor: pointer;
+            padding-left: 0.9em;
+            display: flex;
+            font-size: large;
+            font-family: 'Poppins', sans-serif;
+            align-items: center;
+            border: none;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.2s;
+        }
+
+        #adding span {
+            display: block;
+            margin-left: 0.3em;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #adding svg {
+            display: block;
+            transform-origin: center center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #adding:hover .svg-wrapper {
+            animation: fly-1 0.6s ease-in-out infinite alternate;
+        }
+
+        #adding:hover svg {
+            transform: translateX(1.2em) rotate(45deg) scale(1.1);
+        }
+
+        #adding:hover span {
+            transform: translateX(5em);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        @keyframes fly-1 {
+            from {
+                transform: translateY(0.1em);
+            }
+
+            to {
+                transform: translateY(-0.1em);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header"></header>
+    <div id="container">
+        <h1>Edit Sales</h1>
+        <!-- <form action=""> -->
+        <table>
+            <tr>
+                <td>ID:</td>
+                <td><input type="number" id="id" placeholder="Automatically Add" disabled></td>
+            </tr>
+            <tr>
+                <td>Name: </td>
+                <td><input type="text" id="user_name"></td>
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td><input type="email" id="user_email"></td>
+            </tr>
+            <tr>
+                <td>password: </td>
+                <td><input type="password" id="user_password"></td>
+            </tr>
+            <tr>
+                <td>Phone: </td>
+                <td><input type="number" id="user_phone"></td>
+            </tr>
+            <tr>
+                <td>Address: </td>
+                <td><input type="text" id="user_address"></td>
+            </tr>
+            <tr>
+                <td>State: </td>
+                <td><input type="text" id="user_state"></td>
+            </tr>
+            <tr>
+                <td>Country: </td>
+                <td><input type="text" id="user_country"></td>
+            </tr>
+            <tr style="text-align: center;">
+                <th id="add">
+
+                </th>
+                <th id="cancel">
+
+                </th>
+            </tr>
+
+        </table>
+        <!-- </form> -->
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/4f987be9b3.js" crossorigin="anonymous"></script>
+<script>
+    let h1 = document.querySelector('#container > h1');
+    let form = document.querySelector("table");
+    let add = document.querySelector('#add');
+    let canceled = document.querySelector('#cancel');
+    let data = JSON.parse(localStorage.getItem('edit_users')) || [];
+    let addnew = JSON.parse(localStorage.getItem('addnew')) || [];
+    const API = "https://trypot-nation-dkah.onrender.com/users";
+
+    let user_name = document.querySelector('#user_name');
+    let user_email = document.querySelector('#user_email');
+    let user_password = document.querySelector('#user_password');
+    let user_phone = document.querySelector('#user_phone');
+    let user_address = document.querySelector('#user_address');
+    let user_state = document.querySelector('#user_state');
+    let user_country = document.querySelector('#user_country');
+
+
+
+    if (addnew.length === 0) {
+        if (data.length !== 0) {
+            h1.textContent = "Edit User";
+
+            user_name.value = data.name;
+            user_email.value = data.email;
+            user_password.value = data.password;
+            user_phone.value = data.phone;
+            user_address.value = data.address;
+            user_state.value = data.state;
+            user_country.value = data.country;
+
+        } else {
+            h1.textContent = "No Data Found!";
+            form.innerHTML = null;
+        }
+    } else {
+        h1.textContent = "Add New User";
+
+    }
+
+    add.innerHTML = `<button id="adding">
+  <div class="svg-wrapper-1">
+    <div class="svg-wrapper">
+      <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+  <span>Submit</span>
+</button>`;
+    let adding = document.querySelector('#adding');
+    adding.addEventListener('click', () => {
+        if (user_name.value == "" || user_email.value == "" || user_password.value == "" || user_phone.value == "" || user_address.value == "" || user_state.value == "" || user_country.value == "") {
+            alert('All the fields are required');
+        } else {
+            let temp = {
+                name: user_name.value,
+                email: user_email.value,
+                password: user_password.value,
+                phone: user_phone.value,
+                address: user_address.value,
+                state: user_state.value,
+                country: user_country.value
+
+            };
+
+
+            if (h1.textContent === "Add New User") {
+                postdata();
+                async function postdata() {
+                    try {
+                        let res = await fetch(API, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(temp)
+                        });
+                        let data = await res.json();
+                        if (res.ok) {
+                            localStorage.removeItem('addnew');
+                            alert(`Added Successfully`);
+                            window.location.href = "admin_dashboard.html";
+                        }
+                    } catch (error) {
+                        console.log(error);
+                    }
+                }
+            } else if (h1.textContent === "Edit User") {
+                patchdata();
+                async function patchdata() {
+                    try {
+
+                        let res = await fetch(`${API}/${data.id}`, {
+                            method: 'PUT',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(temp)
+                        });
+                        if (res.ok) {
+                            alert(`Edited Successfully`);
+                            window.location.href = "admin_dashboard.html";
+                        }
+                    } catch (error) {
+                        console.log(error);
+                    }
+                }
+            }
+        }
+    })
+
+    canceled.innerHTML = `
+<button id="cancelling" class="noselect"><span class="text">Cancel</span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"></path></svg></span></button>`;
+
+    let cancelling = document.querySelector('#cancelling');
+    cancelling.addEventListener('click', () => {
+        window.location.href = "admin_dashboard.html";
+        localStorage.removeItem("addnew");
+    })
+
+
+</script>
+
+</html>
