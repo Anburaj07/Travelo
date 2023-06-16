@@ -1,5 +1,5 @@
 
-// const destURL = "https://trypot-nation-dkah.onrender.com/packages";
+
 
 const destURL = "https://vouge-pocket-hogf.onrender.com/packages";
 
@@ -54,9 +54,6 @@ function stateCardCreate(state, items, description){
     h3.textContent = state;
     card.append(h3);
 
-    // let p = document.createElement("p");
-    // p.textContent = items[0].description[0];
-    // card.append(p);
 
     let carouselDiv = document.createElement("div");
     carouselDiv.className = "dest-carousel";
@@ -83,7 +80,7 @@ function stateCardCreate(state, items, description){
     card.append(carouselDiv);
     let readMoreBtn = document.createElement("button");
     readMoreBtn.className = "read-more-btn";
-    readMoreBtn.textContent = "Read More";
+    readMoreBtn.textContent = "Explore";
 
     readMoreBtn.addEventListener("click", function(){
         let state = h3.textContent;

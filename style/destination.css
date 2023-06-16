@@ -1,3 +1,5 @@
+@import url('https://fonts.googlepis.com/css2?famaliy=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -99,7 +101,7 @@
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
-    background-color: #359381;
+    background-color:#7f8685;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -109,7 +111,7 @@
   }
   
   .read-more-btn:hover {
-    background-color: lightseagreen;
+    background-color: lightslategrey;
   }
   
   @media only screen and (max-width: 400px) {
@@ -142,7 +144,7 @@
         display: block;
         margin: 20px auto;
         padding: 10px 20px;
-        background-color: #359381;
+        background-color:#7f8685;
         border: none;
         border-radius: 5px;
         color: #fff;
@@ -152,7 +154,7 @@
     }
     
     .read-more-btn:hover {
-        background-color: lightseagreen;
+        background-color: lightslategrey;
     }
     
     .destcard {

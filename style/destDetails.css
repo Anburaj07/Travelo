@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googlepis.com/css2?famaliy=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -105,7 +105,7 @@ width: 130px;
 height: 40px;
 font-size: 1.1em;
 cursor: pointer;
-background-color: #359381;
+background-color:#7f8685;
 color: #fff;
 border: none;
 border-radius: 5px;
@@ -116,17 +116,17 @@ align-self: center;
 .destcard button:hover {
 border-radius: 5px;
 transform: translateY(-10px);
-box-shadow: 0 7px 0 -2px #59f8f0,
-0 15px 0 -4px #39c8db,
-0 16px 10px -3px #39a2db;
+box-shadow: 0 7px 0 -2px #7f8685,
+0 15px 0 -4px #585c5b,
+0 16px 10px -3px #4e5251;
 }
 
 .destcard button:active {
 transition: all 0.2s;
 transform: translateY(-5px);
-box-shadow: 0 2px 0 -2px #59f8f0,
-0 8px 0 -4px #39a2db,
-0 12px 10px -3px #39a2db;
+box-shadow: 0 2px 0 -2px #7f8685,
+0 8px 0 -4px #585c5b,
+0 12px 10px -3px #4e5251;
 }
 #destDetail {
  display: grid;
