@@ -80,7 +80,7 @@ function stateCardCreate(state, items, description){
     card.append(carouselDiv);
     let readMoreBtn = document.createElement("button");
     readMoreBtn.className = "read-more-btn";
-    readMoreBtn.textContent = "Read More";
+    readMoreBtn.textContent = "Explore";
 
     readMoreBtn.addEventListener("click", function(){
         let state = h3.textContent;
