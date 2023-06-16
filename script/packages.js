@@ -156,6 +156,11 @@
         Btn2.className = "destination-button";
         Btn2.textContent = "View Details";
 
+        Btn2.addEventListener("click", function(){
+            setLocalStorageData(item);
+            redirectToDetailsPage();
+        });
+
         cardBtn.append(Btn1, Btn2);
 
         cardBody.append(cardDesBody, h3, p3, p4, cardBtn);
@@ -203,6 +208,15 @@
         window.location.reload();
     }
 
+    function setLocalStorageData(item) {
+        localStorage.setItem("selectedCardData", JSON.stringify(item));
+    }
 
+    function redirectToDetailsPage() {
+        window.location.href = "details.html";
+    }
+
+    let selectedCardData = JSON.parse(localStorage.getItem("selectedCardData"));
+    localStorage.removeItem("selectedCardData");
     
 

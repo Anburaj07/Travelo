@@ -1,0 +1,136 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+    #main {
+        color: #359381;
+        font-family: 'Poppins', sans-serif;
+       
+    }
+
+    #main {
+        padding: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: whitesmoke;
+    }
+
+    #logodiv > h1{
+    
+        margin-top: 0px;
+    }
+
+  #cname{
+    font-family: 'Pacifico', cursive;
+    cursor: pointer;
+  }
+  #cname > a{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Pacifico', cursive;
+  }
+
+   
+    #navdiv>#headernav>a {
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 .5em;
+        padding: 0.5em;
+        border-radius: 1em;
+        color: #359381;
+
+    }
+
+
+    #navdiv>#headernav>a:hover {
+        background-color: #359381;
+        color: #fff;
+    }
+
+
+    /* Responsive Media Query */
+
+    @media only screen  and (max-width: 1024px) and (min-width:768px)  {
+        #main {
+            flex-direction: column ;
+            font-size: larger;
+        }
+
+        #headernav{
+            margin:10px auto;
+            text-align: center;
+        }
+
+       
+    }
+
+    @media only screen and (max-width:768px)  and (min-width: 425px) {
+        #main {
+            flex-direction: column ;
+        }
+        #headernav{
+            margin:10px auto;
+            text-align: center;
+        }
+       
+    }
+
+    @media only screen and (max-width:425px)  and (min-width: 300px) {
+        #main {
+            flex-direction: column;
+        }
+        #headernav{
+            margin:10px auto;
+            text-align: center;
+        }
+    }
+
+
+   
+</style>
+<header id="main">
+    <div id="logodiv">
+        <h1 id="cname"><a href="index.html">Travelo</a></h1>
+       
+    </div>
+    <div id="navdiv">
+      
+        <nav id="headernav">
+            <!-- <a href="index.html">Home</a>
+            <a href="destination.html">Destination</a>
+            <a href="activities.html">Activities</a>
+            <a href="user_packages.html">Packages</a>
+            <a href="index.html#aboutsec">AboutUs</a>
+            <a href="login.html">Login</a> -->
+
+        </nav>
+    </div>
+  
+</header>
+<script>
+    let div = document.querySelector("#headernav");
+    let user = JSON.parse(localStorage.getItem('user')) || [];
+
+   if(user.length == 0){
+    div.innerHTML = ` <a href="index.html">Home</a>
+            <a href="destination.html">Destination</a>
+            <a href="activities.html">Activities</a>
+            <a href="user_packages.html">Packages</a>
+            <a href="index.html#aboutsec">AboutUs</a>
+            <a href="login.html">Login</a>`;
+   }else{
+    div.innerHTML = ` <a href="index.html">Home</a>
+            <a href="destination.html">Destination</a>
+            <a href="activities.html">Activities</a>
+            <a href="user_packages.html">Packages</a>
+            <a href="index.html#aboutsec">AboutUs</a>
+            <a href="user_profile.html">Profile</a>`;
+   }
+
+function myFunction(x) {
+  x.classList.toggle("change");
+  $("#mobile-menu").toggleClass("menu-hidden", 800, "easeOutQuint");
+};
+
+</script>
