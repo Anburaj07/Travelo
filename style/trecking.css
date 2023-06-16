@@ -51,20 +51,20 @@ body{
 #treckingpage{
     width:90%;
     height:auto;
-    /* border:1px solid red; */
+    /* border:5px solid red; */
+    padding: 2%;
     margin:auto;
     margin-top:20px;
     display:flex;
     gap:25px;
-    border-radius: 15px;;
-    box-shadow: 0 4px 15px 0 rgba(160, 251, 248, 0.75);
-    background-image: linear-gradient(to right, #75ccf2, #88f5c0, #b8f9d9, #a1e7c5);
-    box-shadow: 0 4px 15px 0 rgba(160, 251, 248, 0.75);
+    border-radius: 15px;
+    background-color: #fba6aa;    
 }
 #treck-sortby{
     width:30%;
     height:500px;
     /* border:1px solid red; */
+    padding: 3%;  
     border-radius: 15px;
 }
 #treck-sortby>h1{
@@ -75,7 +75,7 @@ body{
 #treck-data{
     width:100%;
     height:auto;
-    /* border:1px solid green; */
+    /* border:1px solid green;     */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,19 +88,20 @@ body{
     width:100%;
     height:500px;
     /* border:1px solid blue; */
+    padding: 2%;
     float:right;
-    background-color: whitesmoke;
     border-radius: 5px;
-    background-image: linear-gradient(to right, #75ccf2, #88f5c0, #b8f9d9, #a1e7c5);
-    box-shadow: 0 4px 15px 0 rgba(160, 251, 248, 0.75);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #FAACA8;
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+
 }
 .treck-activity:hover{
     -moz-transition: all .14s ease-in-out;
     -o-transition: all .14s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .14s ease-in-out;
-    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
-    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+    box-shadow: 0 4px 15px 0 rgba(123, 10, 112, 0.75);
 }
 .treck-child-image{
     width:100%;
@@ -134,14 +135,12 @@ span{
   margin-top:30px;
 }
 .child-description{
-    /* height:250px; */
-    /* border:1px solid green; */
-    /* font-size: 20px; */
     margin-top: 15px;
     font-family: 'Poppins', sans-serif;
     color:#374f6d;
     word-wrap: break-word;
     text-align: center;
+    padding: 2%;
 }
 .child-description~p{
     font-size: 17px;
@@ -153,18 +152,17 @@ span{
 }
 table{
     width:90%;
-    height:100%;
     margin-left:20px;
     /* background-color: red; */
 }
 td{
-    margin-left: 3px;;
+    margin-left: 3px;
     /* background-color: aqua; */
     font-size: 17px;
     font-family: 'Poppins', sans-serif;
 }
 td:nth-child(1){
-    padding-right: 30px;;
+    padding-right: 30px;
     text-decoration: underline;
     /* background-color: blue; */
 }
@@ -212,8 +210,9 @@ td:nth-child(1){
 }
 
 .treckbutton{
-    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
-    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+
 }
 
 #treckdetail{
@@ -252,7 +251,7 @@ td:nth-child(1){
     font-weight: 900;
     color:rgb(7, 26, 65);
     margin:20px;
-    background-color: #2bb673;
+    background-color: #86cbf3;
     cursor: pointer;
     text-align: center;
     border-radius: 8px;
@@ -262,11 +261,12 @@ td:nth-child(1){
     -o-transition: all .14s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .14s ease-in-out;
-    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
-    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+    box-shadow: 0 4px 15px 0 rgba(196, 49, 154, 0.75);
+    cursor: pointer;
 }
 .sortbyDest{
-    color:#303a5f;
+    color:black;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
@@ -281,9 +281,26 @@ td:nth-child(1){
 @media (min-width: 100px) and (max-width: 815px){
     #treckingpage{
     width:90%;
-    height:auto;
-    border:1px solid red;
+    /* border:5px solid red; */
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
     margin:auto;
+    gap: 20px;
     }
-
+    .treck-child-image{
+        width: 150%;
+        display: block;
+    }
+    .child-description{
+        display: none;
+    }
+    .treck-activity{
+        height: 600px;
+    }
+    #treck-sortby{
+       /* border: 2px solid black; */
+       margin: auto;
+       width: 200px;
+       height: fit-content;
+    }
    } 
