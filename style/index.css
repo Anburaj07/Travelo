@@ -23,25 +23,7 @@ body{
 .banner .bg-1{
     background-image: url('https://cdn.dribbble.com/users/1492844/screenshots/3307274/travel.gif');
 }
-.banner .bg-2{
-    /* background-image: url('../IMAGES/img/banner.png'); */
-}
-.banner .bg-3{
-    /* background-image: url('../IMAGES/img/2.png'); */
-}
-.banner .bg-4{
-    /* background-image: url('../IMAGES/img/3.png'); */
-}
-.banner .bg-5{
-    /* background-image: url('../IMAGES/img/4.png'); */
-}
-.banner .bg-6{
-    /* background-image: url('../IMAGES/img/5.png'); */
-  
-}
-.banner .bg-7{
-    /* background-image: url('../IMAGES/img/6.png'); */
-}
+
 .banner .bg-8{
     background-image: url('../IMAGES/img/7t.png');
 }
