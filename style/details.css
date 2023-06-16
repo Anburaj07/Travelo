@@ -1,14 +1,17 @@
 
+@import url('https://fonts.googlepis.com/css2?famaliy=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 
 * {
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-   }
+     font-family: 'Poppins', sans-serif; 
+}
 
   body{
     padding: 0;
     margin: 0; 
-   line-height: none !important;
+    line-height: none !important;
+    background-color: #f1f0f0;
    }
 
   #img-slider {
@@ -56,6 +59,10 @@
    /* border:1px solid red; */
    /* height: 250px; */
    width: 45%;
+   
+}
+#pricecard{
+   background-color: #f2eeee;
 }
 
 #icondiv{
@@ -76,11 +83,13 @@ border-radius: 1em;
 }
 #card-price-details > #pricecard p{
 color: rgb(88, 83, 86);
+
 }
 
 #pricecard > p{
   margin: 1em 0;
   word-wrap: break-word;
+  
 }
 
 #pricecard #priceshow{

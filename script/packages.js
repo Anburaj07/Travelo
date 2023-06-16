@@ -152,6 +152,12 @@
         Btn1.className = "destination-button";
         Btn1.textContent = "Add To Card";
 
+        Btn1.addEventListener("click", function(){
+            setLocalStorageData(item);
+            redirectToDetailsPage();
+        });
+
+
         let Btn2 = document.createElement("button");
         Btn2.className = "destination-button";
         Btn2.textContent = "View Details";
