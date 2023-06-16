@@ -135,3 +135,22 @@ function changeArrow() {
      let arrow = document.querySelector(".fa-sharp");
      arrow.classList.toggle("fa-angle-up");
  }
+
+
+ let BookNowBtn = document.getElementById("booknow");
+ 
+ BookNowBtn.addEventListener("click",()=>{
+
+    let user = JSON.parse(localStorage.getItem('user')) || [];
+
+            if(user.length === 0){
+                alert('Please login first');
+                window.location.href = "checkout_tour.html";
+              
+            }else{
+
+                window.location.href = "login.html";
+            }
+
+       
+ })
