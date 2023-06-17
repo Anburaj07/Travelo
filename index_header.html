@@ -21,7 +21,7 @@ body {
 
 /* navbad styling */
 header {
-    position: absolute;
+    position:absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -29,12 +29,14 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    z-index: 100;
+    z-index:100;
+
+   
 }
 .logo {
     
     font-size: 2em;
-    color: #359381;
+    color: #000000;
     pointer-events: none;
 }
 
@@ -78,9 +80,91 @@ header {
     color: #fffefe;
 }
 
-@media (min-width: 100px) and (max-width: 767px){
+
+
+
+
+/* ..................................................................................................... */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 540px) and (max-width: 767px){
+    header{
+        position:fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    /* padding: 10px 2px; */
+    display: flex;
+    justify-content:space-around;
+    
+  
+  
+    z-index:100;
+
+   
+    }
+  
+
+   
+    nav{
+        /* display: flex; */
+        /* justify-content:space-evenly; */
+        flex-direction: row;
+        width: 50%;
+
+
         
+
+
+    }
+    .navigation {
+    
+    font-size: 0.5em;
+    text-decoration: none;
+    color: #050505;
+    /* padding: 6px 5px; */
+    /* background-color: #a4b8ac; */
+    /* border-radius: 20px; */
+    /* margin: 0 30px; */
+    font-weight: 300;
+
+}
+    .navigation a:hover,
+.navigation a.active {
+    background: #240202;
+    color: #fffefe;
+}
+
+   
 } 
+
+
+
+
+
+
+
+
 </style>
 <body>
     <div id="logoimg">
@@ -89,7 +173,7 @@ header {
       </div>
     
        
-    <nav class="navigation">
+    <nav class="navigation" id="navbar">
         <a href="index.html" class="index.html">Home</a>
         <a href="destination.html">Destination</a>
         <a href="activities.html">Activities</a>
@@ -98,6 +182,13 @@ header {
         <a href="login.html" class="active1">Login</a>
        
        </nav>
+
+
+
+
+
+
+
 </body>
 <script>
      let txt = document.querySelector(".navigation");
@@ -118,4 +209,17 @@ header {
         <a href="#link1" class="scrollLink">AboutUs</a>
         <a href="login.html" class="active1">Login</a>`;
     }
+
+
+    var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
 </script>
