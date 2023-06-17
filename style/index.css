@@ -185,12 +185,13 @@ margin-left: 20%;
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: rgb(97, 14, 14); /* Set a background color */
+    background-color: rgb(100, 94, 94); /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+    font-size: 2rem; /* Increase font size */
+   
   }
   
   #myBtn:hover {
