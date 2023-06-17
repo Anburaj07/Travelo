@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; 
 }
 
 /* navbad styling */
@@ -84,7 +83,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('https://i.gifer.com/PNq.gif');
+    /* background-image: url('https://img.freepik.com/free-vector/hand-drawn-travel-blue-background_23-2149033527.jpg?size=626&ext=jpg&ga=GA1.1.107694881.1686996804&semt=ais'); */
+    background-image: url("https://img.freepik.com/free-vector/travel-stickers-badge-set_53876-100734.jpg?w=740&t=st=1687002700~exp=1687003300~hmac=76cf1dc983b91780ad5ad0622476486b4efdb0cfc6e0b0bee1b37b1d4ea94209");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
