@@ -5,11 +5,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; 
 }
 
 /* navbad styling */
-header {
+header{
     position: absolute;
     top: 0;
     left: 0;
@@ -84,8 +83,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-image:  url('https://i.pinimg.com/originals/6a/a3/7f/6aa37fd0017bdb291ca8cbdd8b0ede52.gif'); */
-    background-image: url('https://nypost.com/wp-content/uploads/sites/2/2022/12/travel-sales.gif');
+    /* background-image: url('https://media.gettyimages.com/id/482713673/photo/login.jpg?s=612x612&w=0&k=20&c=pBO_dcAv-L4E8rLaq6o2WWkR4GsoSCzGqAD0IwRGPnQ='); */
+    background-image: url('https://img.freepik.com/free-vector/around-world-watercolor-illustration_53876-34775.jpg?size=626&ext=jpg&ga=GA1.1.107694881.1686996804&semt=ais');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
