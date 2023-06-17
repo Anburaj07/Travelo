@@ -41,7 +41,7 @@ body{
     color: #000000;
 }
 .intro{
-    min-height: 50vh;
+    min-height: 20vh;
     color: #fcfcfc;
     display: flex;
     flex-direction: column;
@@ -139,10 +139,27 @@ margin-left: 20%;
     display: flex;
     margin-left: 10px;
 
-    justify-content: right;
+    justify-content: center;
 }
 #planeimg >img{
-    width: 50vh;
+    width: 30vh;
+}
+
+
+.bottoncard2{
+
+   margin-top: 10vh;
+    color: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 3rem;
+
+
+    
+
 }
 
 .library{
