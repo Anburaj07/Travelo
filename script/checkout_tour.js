@@ -1,10 +1,15 @@
 
 
+    
 
     let packageContainer = document.getElementById("checkout-package");
     let selectedCardData = JSON.parse(localStorage.getItem("selectedCardData"));
     let Api = "https://vouge-pocket-hogf.onrender.com/packages";
     let package_id = selectedCardData.id;
+
+   
+
+    
 
     function fetchData(url) {
       fetch(url)
@@ -147,22 +152,86 @@ function toggleCardDetails() {
     }
 
     function processPayment() {
-        var paymentOption = document.getElementById("paymentOption").value;
-        if (paymentOption === "cash") {
+      var paymentOption = document.getElementById("paymentOption").value;
+      if (paymentOption === "cash") {
+        alert("Payment successful!");
+        saveBookingDetails();
+        postingData();
+        // window.location.href = "index.html";
+      } else if (paymentOption === "debitCard") {
+        var cardNumber = document.getElementById("cardNumber").value;
+        var cvv = document.getElementById("cvv").value;
+        var username = document.getElementById("username").value;
+    
+        if (cardNumber && cvv && username) {
           alert("Payment successful!");
-          window.location.href = "index.html";
-        } else if (paymentOption === "debitCard") {
-          var cardNumber = document.getElementById("cardNumber").value;
-          var cvv = document.getElementById("cvv").value;
-          var username = document.getElementById("username").value;
-      
-          if (cardNumber && cvv && username) {
-            alert("Payment successful!");
-            window.location.href = "index.html";
-          } else {
-            alert("Please fill in all the card details.");
-          }
+          saveBookingDetails();
+          postingData();
+          // window.location.href = "index.html";
+        } else {
+          alert("Please fill in all the card details.");
         }
       }
-
- 
+    }
+    
+    const SalesAPI = "https://vouge-pocket-hogf.onrender.com/sales";
+    let userdata = JSON.parse(localStorage.getItem('user')) || [];
+    
+    let selectedPackage;
+    let memberCount;
+    let totalPrice;
+    
+    function saveBookingDetails() {
+      selectedPackage = JSON.parse(localStorage.getItem("selectedCardData"));
+      if (selectedPackage && selectedPackage.title) {
+        var memberInput = document.querySelector(".member");
+        memberCount = parseInt(memberInput.value);
+        var totalPriceElement = document.getElementById("total-price");
+        totalPrice = parseInt(totalPriceElement.textContent.replace("₹", ""));
+    
+        var bookingDetails = {
+          packageName: selectedPackage.title,
+          totalMembers: memberCount,
+          totalPrice: totalPrice,
+          duration: selectedPackage.duration,
+          destination: selectedPackage.destination
+        };
+    
+        var bookings = JSON.parse(localStorage.getItem("bookings")) || [];
+        bookings.push(bookingDetails);
+        localStorage.setItem("bookings", JSON.stringify(bookings));
+      } else {
+        console.error("Selected package data is undefined or missing 'title' property.");
+      }
+    }
+    
+    async function postingData() {
+      if (selectedPackage && selectedPackage.title) {
+        try {
+          let res = await fetch(SalesAPI, {
+            method: "POST",
+            headers: {
+              "Content-type": "application/json",
+            },
+            body: JSON.stringify({
+              package_name: selectedPackage.title,
+              name: userdata.name,
+              email: userdata.email,
+              totalMembers: memberCount,
+              timestamp: "Placeholder Package",
+              bill: totalPrice
+            }),
+          });
+          if (res.ok) {
+            window.location.href = "index.html";
+          } else {
+            console.error("Failed to post data to SalesAPI. Response status:", res.status);
+          }
+        } catch (error) {
+          console.error("An error occurred while posting data to SalesAPI:", error);
+        }
+      } else {
+        console.error("Selected package data is undefined or missing 'title' property.");
+      }
+    }
+    
