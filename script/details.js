@@ -145,11 +145,11 @@ function changeArrow() {
 
             if(user.length === 0){
                 alert('Please login first');
-                window.location.href = "checkout_tour.html";
+                window.location.href = "login.html";
               
             }else{
 
-                window.location.href = "login.html";
+                window.location.href = "checkout_tour.html";
             }
 
        
