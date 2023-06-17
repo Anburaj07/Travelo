@@ -112,7 +112,7 @@
     }
 
     .member {
-      width: 50px;
+      width: 60px;
       height: 40px;
       margin-left: 10px;
       margin-right: 10px;
@@ -121,8 +121,13 @@
       border-radius: 3px;
     }
 
-    .incre {
+    .incre{
       margin-left: 5px;
+      height: 40px;
+    }
+    .decre{
+      margin-left: 5px;
+      height: 40px;
     }
 
     .inputmember button {

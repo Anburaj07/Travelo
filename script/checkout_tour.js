@@ -73,6 +73,8 @@
       let memberTotal = document.createElement("p");
       memberTotal.textContent = "Total Member : ";
 
+      let div =document.createElement('div');
+
       let increaseButton = document.createElement("button");
       increaseButton.className = "incre";
       increaseButton.textContent = "+";
@@ -83,7 +85,7 @@
       memberInput.className = "member";
       memberInput.min = "1";
 
-      decreaseButton = document.createElement("button");
+      let decreaseButton = document.createElement("button");
       decreaseButton.className = "decre";
       decreaseButton.textContent = "-";
 
@@ -101,7 +103,8 @@
         }
       });
 
-      inputMemberDiv.append(memberTotal, increaseButton, memberInput, decreaseButton);
+      div.append(increaseButton, memberInput, decreaseButton)
+      inputMemberDiv.append(memberTotal,div);
 
       cardBody.append(cardDesBody, h3, p3, inputMemberDiv);
 
