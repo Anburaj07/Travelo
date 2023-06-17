@@ -98,7 +98,7 @@ font-size: 1.5em;
 }
 
 #booknow{
-background-color: #359381;
+background-color:#586b69;
 color: white;
 border-radius: 1em;
 padding: .5em 1em;
@@ -109,8 +109,8 @@ width: 100%;
 }
 #booknow:hover{
 background-color: #fff;
-border: 1px solid #359381;
-color: #359381;
+border: 1px solid #7f8685;
+color: #606362;
 }
 
 

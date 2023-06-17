@@ -128,12 +128,12 @@
     .inputmember button {
       width:35px;
       height: 30px;
-      background-color: rgb(91, 182, 91);
+      background-color: #7f8685;
     }
 
     .inputmember button:hover {
       color: #c9acac;
-      background-color: #359381;
+      background-color: #666b6a;
       box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
       transform: translateY(-2px); 
     }
@@ -156,7 +156,7 @@
       margin-top: 15px;
       width: 100%;
       padding: 10px;
-      background-color: green;
+      background-color:#7f8685;
       color: white;
       border: none;
       border-radius: 5px;
@@ -164,7 +164,7 @@
     }
 
     .book-now-button:hover {
-      background-color: darkgreen;
+      background-color:darkgrey;
     }
 
 
@@ -195,7 +195,7 @@
     .bookNow-btn {
       margin-top: 10px;
       padding: 10px 20px;
-      background-color: #4CAF50;
+      background-color: #7f8685;
       color: #fff;
       border: none;
       border-radius: 4px;
@@ -203,8 +203,8 @@
     }
 
     .bookNow-btn:hover {
-      background-color: #45a049;
-      background-color: darkgreen;
+      background-color:#7f8685;
+      background-color: #7f8685;
     }
 
     #checkout-details{
