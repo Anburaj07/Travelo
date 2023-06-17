@@ -59,7 +59,7 @@ async function loadData(email, password, username) {
             let data = await res.json();
             console.log(data);
             localStorage.setItem("user", JSON.stringify(data));
-            window.location = "index.html";
+            window.location = "login.html";
         } else {
             alert("Something went wrong, please try after sometime.");
         }

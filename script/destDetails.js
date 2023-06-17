@@ -75,7 +75,7 @@ function createDestCard(data) {
     viewDetailsBtn.textContent = "View Details";
 
     viewDetailsBtn.addEventListener("click", function() {
-        localStorage.setItem("package_id", data.id);
+        localStorage.setItem("selectedCardData",JSON.stringify(data));
         window.location.href = "details.html";
     });
     card.append(viewDetailsBtn);
