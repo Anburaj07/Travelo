@@ -110,7 +110,7 @@
         }
 
         .styled-table thead tr {
-            background-color: #7cbba8;
+            background-color: #808080;
             color: #ffffff;
             text-align: left;
         }
@@ -140,7 +140,7 @@
 
         .edit_button button {
             font-family: inherit;
-            background: rgb(48, 158, 48);
+            background: rgb(155, 161, 123);
             color: white;
             padding: 0.7em 1em;
             cursor: pointer;
@@ -353,7 +353,7 @@
             fill: none;
             stroke-linecap: round;
             stroke-linejoin: round;
-            stroke: #234567;
+            stroke: #939394;
             stroke-width: 2;
             transform: translateX(-5px);
             transition: all 0.3s ease;
@@ -361,7 +361,7 @@
 
         .cta:hover:before {
             width: 100%;
-            background: #b1dae7;
+            background: #b4b5b6;
         }
 
         .cta:hover svg {
@@ -375,7 +375,7 @@
 
         /* fix button */
         .gotop {
-            background-color: #7cbba8;
+            background-color: #757777;
             /* padding: 10px 20px; */
             font-size: 30px;
             padding-top: 7px;
@@ -440,7 +440,7 @@
                     <p id="todaySales"></p>
                 </div>
                 <div class="img_div">
-                    <img src="./img/upsales.png" alt="sales">
+                    <img src="./IMAGES/img/graph1.png" alt="sales">
                 </div>
             </div>
             <div id="box2">
@@ -449,7 +449,7 @@
                     <p id="weeklySales"></p>
                 </div>
                 <div class="img_div">
-                    <img src="./img/weeksales.png" alt="sales">
+                    <img src="./IMAGES/img/graph2.png" alt="sales">
                 </div>
             </div>
             <div id="box3">
@@ -458,7 +458,7 @@
                     <p id="monthlySales"></p>
                 </div>
                 <div class="img_div">
-                    <img src="./img/sales.png" alt="sales">
+                    <img src="./IMAGES/img/graph3.png" alt="sales">
                 </div>
             </div>
         </div>
@@ -694,11 +694,11 @@
 
     // 2023-06-30
     const API = "https://vouge-pocket-hogf.onrender.com/packages?_sort=id&_order=asc";
-    const BaseAPI = "https://trypot-nation-dkah.onrender.com/packages";
-    const UserAPI = "https://trypot-nation-dkah.onrender.com/users";
-    const SalesAPI = "https://trypot-nation-dkah.onrender.com/sales";
-    const AdminAPI = "https://trypot-nation-dkah.onrender.com/login";
-    let searchAPI = "https://trypot-nation-dkah.onrender.com/packages";
+    const BaseAPI = "https://vouge-pocket-hogf.onrender.com/packages";
+    const UserAPI = "https://vouge-pocket-hogf.onrender.com/users";
+    const SalesAPI = "https://vouge-pocket-hogf.onrender.com/sales";
+    const AdminAPI = "https://vouge-pocket-hogf.onrender.com/login";
+    let searchAPI = "https://vouge-pocket-hogf.onrender.com/packages";
     // sendtop
     function sendtop() {
         document.body.scrollTop = 0;
