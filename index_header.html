@@ -60,8 +60,10 @@ header {
 }
 
 .navigation a {
+    
+    font-size: 1.5em;
     text-decoration: none;
-    color: #fff;
+    color: #050505;
     padding: 6px 25px;
     background-color: #a4b8ac;
     border-radius: 20px;
@@ -72,8 +74,8 @@ header {
 
 .navigation a:hover,
 .navigation a.active {
-    background: #ec801b;
-    color: #0a0a0a;
+    background: #240202;
+    color: #fffefe;
 }
 
 @media (min-width: 100px) and (max-width: 767px){
@@ -91,9 +93,8 @@ header {
         <a href="index.html" class="index.html">Home</a>
         <a href="destination.html">Destination</a>
         <a href="activities.html">Activities</a>
-        <a href="packages.html">Packages</a>
-        
-        <a href="index.html" class="scrollLink">AboutUs</a>
+        <a href="packages.html">Packages</a>        
+        <a href="#link1" class="scrollLink">AboutUs</a>
         <a href="login.html" class="active1">Login</a>
        
        </nav>
@@ -107,14 +108,14 @@ header {
         <a href="destination.html">Destination</a>
         <a href="activities.html">Activities</a>
         <a href="packages.html">Packages</a>
-        <a href="index.html" class="scrollLink">AboutUs</a>
+        <a href="#link1" class="scrollLink">AboutUs</a>
         <a href="profile.html" class="active1">Profile</a>`;
     }else{
         txt.innerHTML =  `<a class="index.html">Home</a>
         <a href="destination.html">Destination</a>
         <a href="activities.html">Activities</a>
         <a href="packages.html">Packages</a>
-        <a href="index.html" class="scrollLink">AboutUs</a>
+        <a href="#link1" class="scrollLink">AboutUs</a>
         <a href="login.html" class="active1">Login</a>`;
     }
 </script>

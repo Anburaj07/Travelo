@@ -13,7 +13,13 @@
     <script>
         $(function(){
         $("#header").load("index_header.html"); 
+        $("#bottom").load("bottomservices.html"); 
+        
+
+
         $("#footer").load("user_footer.html"); 
+
+        
        
          
     });
@@ -46,7 +52,7 @@
     </div>
 
     <div class="tab intro">
-        <h2 class="animation-show">Travelo</h2>
+        <h2 class="animation-show" id="link1">Travelo</h2>
         <img src="IMAGES/img/navlogo.PNG" alt="" class="animation-show">
         <p class="animation-show" >
             Welcome to the Travelo . Here, we share our commitment to promoting sustainable and responsible tourism through the power of technology. Our open-source projects aim to create innovative tools that make it easier for ecotourism enthusiasts to find sustainable travel experiences and learn about environmental conservation. We believe that collaboration and technology can be powerful tools in promoting sustainable tourism, and we invite you to join us in our mission to protect the planet through responsible travel. 
@@ -54,9 +60,21 @@
         
         <button class="animation-show" id="submit">Subcribe</button>
     </div>
+    <section>
+        <div id="planeimg">
+            <img src="https://i.pinimg.com/originals/bd/ba/9b/bdba9b09e40bc2eb4281078049263d08.gif" alt="">
+        </div>
+        <div class="bottoncard">
+            <h2>Discover the touch of Nature</h2>
+        
+        </div>
+
+    </section>
 
     <div class="tab library">
+       
         <div class="animation-show">
+           
             <a href="destination.html">  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/f8/1c/13/padma-resort-ubud.jpg?w=900&h=500&s=1">
             </a>
           
@@ -91,6 +109,35 @@
 
 
 
+    <section>
+
+        <div class="bottoncard2"><h1 > What Services<br> we Provide</h1>
+
+       
+        </div>
+        <div id="bottom"></div>
+<!-- 
+        <div class="litdiv">
+            <ol type="1">
+                <li> <h2>Travle Plan</h2> <br>Get a grate deals in your holiday bookings </li><br>
+                <li><h2>Flights Booking</h2><br> get a disscount in your first flight ticket</li><br>
+                <li><h2>Accomodation</h2><br>disscount in your first flight ticket
+                </li><br>
+             </ol>
+        </div> -->
+        
+       
+    </section>
+
+
+    <div class="bottoncard"><h1 > Plan easy,Pay less &<br> experience more</h1>
+
+       
+    </div>
+    
+
+
+
 
     <!-- footer section starts here  -->
 
@@ -100,7 +147,16 @@
 <!-- footer section ends here  -->
 
 
-
+<script>
+    $(document).ready(function() {
+        $("a.scrollLink").click(function(event) {
+            event.preventDefault();
+            $("html, body").animate({
+                scrollTop: $($(this).attr("href")).offset().top
+              }, 500);
+          });
+      });
+  </script>
 
 
 
