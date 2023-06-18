@@ -46,7 +46,7 @@
  
 
  
- ## 🌐 Deployed Link :
+ ## 🌐 Deployed Link : https://iridescent-tapioca-0f34cb.netlify.app/
  
 
  </div>
