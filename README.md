@@ -168,8 +168,8 @@ npm install --engine-strict
    </div>
   
  ## Feedback / Contributing 🤝
- > Contributions are always welcome! Just raise an issue, we will discuss it.
-  > If you have any feedback, please reach out to us <a href="mailto: pspiyush130@gmail.com">Team Travelo</a>
+ > Contributions are always welcome! Just raise an issue, and we will discuss it.
+  > If you have any feedback, please reach out to us <a href="mailto: anburaj2203@gmail.com">Team Travelo</a>
 
 
 
